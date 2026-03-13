@@ -128,11 +128,9 @@ e depois faço display: inline; dos itens e defino o tamanho da navbar
             <li class="barra_ls" id="barra3_ls"></li>
             <div>
                 <ul class="ul-lista_ls">
-                    <li><a class="lista_ls" href="#">Item 1</a></li>
-                    <li><a class="lista_ls" href="#">Item 2</a></li>
-                    <li><a class="lista_ls" href="#">Item 3</a></li>
-                    <li><a class="lista_ls" href="#">Item 4</a></li>
-                    <li><a class="lista_ls" href="#">Item 5</a></li>
+                    <li><a class="lista_ls" id="menus" href="#">Menus</a></li>
+                    <li><a class="lista_ls" id="ofertas" href="#">Ofertas</a></li>
+                    <li><a class="lista_ls" id="delivery" href="#">Delivery</a></li>
             </div>
         </ul>
     </nav>
@@ -173,10 +171,12 @@ e depois faço display: inline; dos itens e defino o tamanho da navbar
 
     .nav_ls{
         grid-area:nav_ls;
+        flex-direction: column;
         background-color: #7a58f3;
         border-top-left-radius:12px;
-        height:auto;
-        padding: 5px;
+        height:250px;
+        margin: 0;
+        padding: 0;
         border:2px solid blue;
         width:auto;
     }
@@ -187,7 +187,7 @@ e depois faço display: inline; dos itens e defino o tamanho da navbar
         height:35px;
         justify-items: center;
         padding: 0;
-        margin:0;
+        margin:3px;
         display:grid;
         grid-template-areas: 
         "barra1 barra1 barra1"
@@ -198,8 +198,8 @@ e depois faço display: inline; dos itens e defino o tamanho da navbar
 
     .barra_ls{
         height:3px;
-        margin: 0;
-        padding: 0;
+        margin: 3px;
+        padding: 0px;
         width:50px;
     }
 
@@ -225,13 +225,43 @@ e depois faço display: inline; dos itens e defino o tamanho da navbar
     }
 
     .ul-lista_ls{
+        display: grid;
+        grid-template-areas: 
+        "menus"
+        "ofertas"
+        "delivery";
+        grid-template-columns:145px;
+        grid-template-rows: 60px 60px 60px;
         /*display: none;*/
         flex-direction:column;
-        position:absolute;
+        list-style-type:none;
         align-items:center;
-        justify-content:center;
-        margin-top:10px;
+        justify-items:center;
         border:2px solid black;
+        margin:0;
+        padding:0;
+        width: auto;
+        margin-top: 20px;
+        border-radius: 6px;
+
+    }
+
+    .lista_ls{
+        text-decoration:none;
+        color:white;
+        font-weight:bold;
+    
+
+    }
+
+    #menus{
+        grid-area: menus;
+    }
+    #ofertas{
+        grid-area: ofertas;
+    }
+    #delivery{
+        grid-area: delivery;
     }
 
 
