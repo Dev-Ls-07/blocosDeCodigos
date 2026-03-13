@@ -9,40 +9,90 @@
 
 <body>
 
+    <!-- Header Velas Styles -->
+
+
+    <!-- http://127.0.0.1:5500/header/header.html -->
+
+<div class="""div_vl">
 
 <header class="header_Velas">
     <h3> &copy;Todos os direitos reservados</h3>
-    <nav>
+    <nav class="nav_vl">
         <ul>
-            <li><a class="navbar" href="#">Item 1</a></li>
-            <li><a class="navbar" href="#">Item 2</a></li>
-            <li><a class="navbar" href="#">Item 3</a></li>
-            <li><a class="navbar" href="#">Item 4</a></li>
-            <li><a class="navbar" href="#">Item 5</a></li>
+            <li><a class="lista_vl" href="#">Item 1</a></li>
+                <ul> 
+                    <li><a class="sub_vl" href="#">Subitem 1</a></li>
+                    <li><a class="sub_vl" href="#">Subitem 2</a></li>
+                    <li><a class="sub_vl" href="#">Subitem 3</a></li>
+                    <li><a class="sub_vl" href="#">Subitem 4</a></li>
+                    <li><a class="sub_vl" href="#">Subitem 5</a></li> 
+                </ul>
+
+             <li><a class="lista_vl" href="#">Item 2</a></li>
+                <ul>
+                   <li><a class="sub_vl" href="#">Subitem 1</a></li>
+                    <li><a class="sub_vl" href="#">Subitem 2</a></li>
+                    <li><a class="sub_vl" href="#">Subitem 3</a></li>
+                    <li><a class="sub_vl" href="#">Subitem 4</a></li>
+                    <li><a class="sub_vl" href="#">Subitem 5</a></li>
+                </ul>
+
+            <li><a class="lista_vl" href="#">Item 3</a></li>
+                    <ul>
+                    <li><a class="sub_vl" href="#">Subitem 1</a></li>
+                    <li><a class="sub_vl" href="#">Subitem 2</a></li>
+                    <li><a class="sub_vl" href="#">Subitem 3</a></li>
+                    <li><a class="sub_vl" href="#">Subitem 4</a></li>
+                    <li><a class="sub_vl" href="#">Subitem 5</a></li>
+                    </ul>
+
+            <li><a class="lista_vl" href="#">Item 4</a></li>
+                    <ul>
+                    <li><a class="sub_vl" href="#">Subitem 1</a></li>
+                    <li><a class="sub_vl" href="#">Subitem 2</a></li>
+                    <li><a class="sub_vl" href="#">Subitem 3</a></li>
+                    <li><a class="sub_vl" href="#">Subitem 4</a></li>
+                    <li><a class="sub_vl" href="#">Subitem 5</a></li>
+                    </ul>
+
+            <li><a class="lista_vl" href="#">Item 5</a></li>
+            <ul>
+                <li><a class="sub_vl" href="#">Subitem 1</a></li>
+                <li><a class="sub_vl" href="#">Subitem 2</a></li>
+                <li><a class="sub_vl" href="#">Subitem 3</a></li>
+                <li><a class="sub_vl" href="#">Subitem 4</a></li>
+                <li><a class="sub_vl" href="#">Subitem 5</a></li>
+            </ul>
         </ul>
     </nav>
+</header>
+</div>
 
-    <style>
-        .navbar {
-            background-image: linear-gradient(to right, #7a58f3 0%, #6a42f8 30%, #582bfd 60%, #4411fd 90%, #7a58f3);
-            display: inline;
-            font-family: sans-serif;
-        }
-        .navbar a {
-            text-decoration: none;
-            color: black;
+<style>
+
+
+    .nav_vl {
+        box
+        display: inline;
+        font-family: sans-serif;
+        background-image: linear-gradient(to right, #7a58f3 0%, #653bfa 30%, #663cfd 60%, #4c16fd 90%, #7a58f3 100%);
+    }
+    .nav_vl  sub_vl {
+        overflow: hidden;
+    }
+    .nav_vl a {
+        padding: 10px;
+        text-decoration: none;
+        color: black;
         }
 
-        .navbar a:hover {
-            box-shadow: 4px 4px 2px black;
-        }
-    </style>
+    
+</style>
+
 <!-- Feito a navbar eu geralmente pulo a header para o código 
 e depois faço display: inline; dos itens e defino o tamanho da navbar
 (em pixels) assim como a margin-bottom -->
-</header>
-
-
 
 
 <!----------------------------------------------------------------------->
@@ -50,33 +100,114 @@ e depois faço display: inline; dos itens e defino o tamanho da navbar
 
 
 
-
-
 <br>
+<hr class="divisoria">
+<style>
+    .divisoria {
+        border: 2px solid black;
+        border-radius: 22px;
+    }
+</style>
 
-<header class="header_ls">
-    <h1>header.com</h1>
-
-    <nav>
-        <ul>
-            <li><a class="icon1" href="#">icon1</a></li>
-            <li><a class="icon2" href="#">icon2</a></li>
-            <li><a class="icon3" href="#">icon3</a></li>
-        </ul>
-    </nav>
-</header>
 
 <!-- Header ls Styles -->
 
 
-</body>
+<div class="div_ls">
+<header class="header_ls">
+    <h1>header.com</h1>
+
+   
+</header>
+
+
+
+     <nav class="nav_ls">
+        <ul class="ul_ls">
+            <li class="barra_ls" id="barra1_ls"></li>
+            <li class="barra_ls" id="barra2_ls"></li>
+            <li class="barra_ls" id="barra3_ls"></li>
+        </ul>
+    </nav>
+</div>
+
 
 <style>
+
+    .div_ls{
+        display:grid;
+        grid-template-areas:
+        "nav_ls header_ls header_ls header_ls"
+        "main_ls main_ls main_ls main_ls"
+        "footer_ls footer_ls footer_ls footer_ls";
+        height:600px;
+    }
+
     .header_ls {
+        grid-area:header_ls;
         background-color: #7a58f3;
         color: white;
         text-align: center;
         padding: 20px;
-        border-radius:12px;
+        border-top-right-radius:12px;
+        height:40px;
     }
 
+    .nav_ls{
+        grid-area:nav_ls;
+        background-color: #7a58f3;
+        border-top-left-radius:12px;
+        height:auto;
+        border:2px solid blue;
+    }
+
+    .ul_ls{
+        border:2px solid red;
+        border-radius: 6px;
+        height:30px;
+        justify-items: center;
+        padding: 0;
+        margin:0;
+        display:grid;
+        grid-template-areas: 
+        "barra1 barra1 barra1"
+        "barra2 barra2 barra2"
+        "barra3 barra3 barra3";
+        align-items: center;
+    }
+
+    .barra_ls{
+        height:2px;
+    }
+
+    #barra1_ls{
+        grid-area:barra1;
+        background-color:white;
+        width: 30px;
+        border-radius:12px;
+        list-style-type: none;
+    }
+
+    #barra2_ls{
+        grid-area:barra2;
+        background-color:white;
+        width: 30px;
+        border-radius:12px;
+        list-style-type: none;
+    }
+
+    #barra3_ls{
+        grid-area:barra3;
+        background-color:white;
+        width: 30px;
+        border-radius:12px;
+        list-style-type: none;
+    }
+
+
+
+</style>
+
+
+
+</body>
