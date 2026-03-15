@@ -13,3 +13,150 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* Header Ls Styles */
+
+ .div_ls{
+        display:grid;
+        grid-template-areas:
+        "nav_ls header_ls"
+        "nav_ls main_ls"
+        "footer_ls footer_ls";
+        height:600px;
+        width: 100%;
+        grid-template-columns: 160px 1fr;
+        grid-template-rows: 80px 1fr 60px;
+    }
+
+    .header_ls {
+        grid-area:header_ls;
+        background-color: #7a58f3;
+        color: white;
+        text-align: center;
+        padding: 5px;
+        border-top-right-radius:12px;
+        height:40px;
+        border:2px solid brown;
+        justify-items: left;
+        width:auto;
+    }
+
+    .header_ls h1 {
+        margin: 0;
+    }
+
+    .nav_ls{
+        grid-area:nav_ls;
+        flex-direction: column;
+        background-color: #7a58f3;
+        border-top-left-radius:12px;
+        height:250px;
+        margin: 0;
+        padding: 0;
+        border:2px solid blue;
+        width:auto;
+    }
+
+    .ul_ls{
+        border:2px solid red;
+        border-radius: 6px;
+        height:35px;
+        justify-items: center;
+        padding: 0;
+        margin:3px;
+        display:grid;
+        grid-template-areas: 
+        "barra1 barra1 barra1"
+        "barra2 barra2 barra2"
+        "barra3 barra3 barra3";
+        align-items: center;
+    }
+
+    .barra_ls{
+        height:3px;
+        margin: 3px;
+        padding: 0px;
+        width:50px;
+    }
+
+    #barra1_ls{
+        grid-area:barra1;
+        background-color:white;
+        border-radius:12px;
+        list-style-type: none;
+    }
+
+    #barra2_ls{
+        grid-area:barra2;
+        background-color:white;
+        border-radius:12px;
+        list-style-type: none;
+    }
+
+    #barra3_ls{
+        grid-area:barra3;
+        background-color:white;
+        border-radius:12px;
+        list-style-type: none;
+    }
+
+    .ul-lista_ls{
+        display: grid;
+        grid-template-areas: 
+        "menus"
+        "ofertas"
+        "delivery";
+        grid-template-columns:145px;
+        grid-template-rows: 60px 60px 60px;
+        /*display: none;*/
+        flex-direction:column;
+        list-style-type:none;
+        align-items:center;
+        justify-items:center;
+        border:2px solid black;
+        margin:0;
+        padding:0;
+        width: auto;
+        margin-top: 20px;
+        border-radius: 6px;
+
+    }
+
+    .lista_ls{
+        text-decoration:none;
+        color:white;
+        font-weight:bold;
+    
+
+    }
+
+    #menus{
+        grid-area: menus;
+    }
+    #ofertas{
+        grid-area: ofertas;
+    }
+    #delivery{
+        grid-area: delivery;
+    }
+
+
+
+
+
+
+
+
+
+
