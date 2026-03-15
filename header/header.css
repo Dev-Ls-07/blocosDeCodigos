@@ -25,6 +25,14 @@
 
 
 
+
+
+
+
+
+
+
+
 /* Header Ls Styles */
 
  .div_ls{
@@ -36,7 +44,7 @@
         height:600px;
         width: 100%;
         grid-template-columns: 160px 1fr;
-        grid-template-rows: 80px 1fr 60px;
+        grid-template-rows: auto 1fr 60px;
     }
 
     .header_ls {
@@ -152,6 +160,20 @@
     }
 
 
+
+    .main_ls{
+        grid-area: main_ls;
+        background-color: green;
+        border:2px solid orange;
+    }
+
+
+    .footer_ls{
+        grid-area:footer_ls;
+        background-color: blueviolet;
+        height:auto;
+    
+    }
 
 
 
