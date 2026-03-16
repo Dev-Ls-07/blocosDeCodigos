@@ -2173,3 +2173,3482 @@ DONE</code></pre>
   - instalação
   - uso
 </details>
+
+
+<!-- Parte 3/12 — Itens 241–360 — Formato: Código + Resultado (GitHub README / GFM) -->
+
+## Seção H — Links avançados, âncoras e navegação no GitHub (241–290)
+
+241) Link básico
+
+**Código:**
+```md
+[GitHub](https://github.com)
+```
+
+**Resultado:**
+[GitHub](https://github.com)
+
+---
+
+242) Link com “título” (tooltip em alguns lugares)
+
+**Código:**
+```md
+[GitHub](https://github.com "Ir para o GitHub")
+```
+
+**Resultado:**
+[GitHub](https://github.com "Ir para o GitHub")
+
+---
+
+243) Link automático com `<>`
+
+**Código:**
+```md
+<https://github.com>
+```
+
+**Resultado:**
+<https://github.com>
+
+---
+
+244) Link de referência (1)
+
+**Código:**
+```md
+Veja o [site][site].
+
+[site]: https://example.com
+```
+
+**Resultado:**
+Veja o [site][site].
+
+[site]: https://example.com
+
+---
+
+245) Link de referência (múltiplos)
+
+**Código:**
+```md
+[Docs][d] • [API][a] • [FAQ][f]
+
+[d]: https://example.com/docs
+[a]: https://example.com/api
+[f]: https://example.com/faq
+```
+
+**Resultado:**
+[Docs][d] • [API][a] • [FAQ][f]
+
+[d]: https://example.com/docs
+[a]: https://example.com/api
+[f]: https://example.com/faq
+
+---
+
+246) Link relativo para arquivo (no repo)
+
+**Código:**
+```md
+[Licença](LICENSE)
+```
+
+**Resultado:**
+[Licença](LICENSE)
+
+---
+
+247) Link relativo para pasta (no repo)
+
+**Código:**
+```md
+[Docs](docs/)
+```
+
+**Resultado:**
+[Docs](docs/)
+
+---
+
+248) Link relativo para README dentro de pasta
+
+**Código:**
+```md
+[Guia](docs/README.md)
+```
+
+**Resultado:**
+[Guia](docs/README.md)
+
+---
+
+249) Link para imagem no repo (relativo)
+
+**Código:**
+```md
+![Imagem](docs/img/banner.png)
+```
+
+**Resultado:**
+![Imagem](docs/img/banner.png)
+
+---
+
+250) Link para “anchor” de heading (TOC manual)
+
+**Código:**
+```md
+- [Uso](#uso)
+- [Instalação](#instalação)
+```
+
+**Resultado:**
+- [Uso](#uso)
+- [Instalação](#instalação)
+
+---
+
+251) Criar âncora manual (HTML)
+
+**Código:**
+```html
+<a id="topo"></a>
+Voltar ao [topo](#topo)
+```
+
+**Resultado:**
+<a id="topo"></a>
+Voltar ao [topo](#topo)
+
+---
+
+252) Link com querystring (parâmetros)
+
+**Código:**
+```md
+[Exemplo](https://example.com/?utm_source=readme&utm_medium=github)
+```
+
+**Resultado:**
+[Exemplo](https://example.com/?utm_source=readme&utm_medium=github)
+
+---
+
+253) Link “mailto:���
+
+**Código:**
+```md
+[Email](mailto:dev@example.com)
+```
+
+**Resultado:**
+[Email](mailto:dev@example.com)
+
+---
+
+254) Link para telefone (funciona como link)
+
+**Código:**
+```md
+[Ligar](tel:+5511999999999)
+```
+
+**Resultado:**
+[Ligar](tel:+5511999999999)
+
+---
+
+255) Link para “issue” por número (auto-link no GitHub quando existe)
+
+**Código:**
+```md
+Veja a issue #1
+```
+
+**Resultado:**
+Veja a issue #1
+
+---
+
+256) Link para PR por número (auto-link no GitHub quando existe)
+
+**Código:**
+```md
+Veja o PR #2
+```
+
+**Resultado:**
+Veja o PR #2
+
+---
+
+257) Menção de usuário
+
+**Código:**
+```md
+Obrigado, @Dev-Ls-07!
+```
+
+**Resultado:**
+Obrigado, @Dev-Ls-07!
+
+---
+
+258) Link com texto “botão” via badge
+
+**Código:**
+```md
+[![Abrir Docs](https://img.shields.io/badge/Docs-Abrir-blue)](https://example.com/docs)
+```
+
+**Resultado:**
+[![Abrir Docs](https://img.shields.io/badge/Docs-Abrir-blue)](https://example.com/docs)
+
+---
+
+259) Separar links com bullet
+
+**Código:**
+```md
+[Site](https://example.com) • [Docs](https://example.com/docs) • [Changelog](CHANGELOG.md)
+```
+
+**Resultado:**
+[Site](https://example.com) • [Docs](https://example.com/docs) • [Changelog](CHANGELOG.md)
+
+---
+
+260) Separar links com pipe
+
+**Código:**
+```md
+[Site](https://example.com) | [Docs](https://example.com/docs) | [Licença](LICENSE)
+```
+
+**Resultado:**
+[Site](https://example.com) | [Docs](https://example.com/docs) | [Licença](LICENSE)
+
+---
+
+261) Link com imagem (thumbnail)
+
+**Código:**
+```md
+[![Thumb](https://placehold.co/480x270/111827/ffffff.png?text=Thumbnail)](https://example.com)
+```
+
+**Resultado:**
+[![Thumb](https://placehold.co/480x270/111827/ffffff.png?text=Thumbnail)](https://example.com)
+
+---
+
+262) Link para “actions” (relativo no GitHub)
+
+**Código:**
+```md
+[CI](/actions)
+```
+
+**Resultado:**
+[CI](/actions)
+
+---
+
+263) Link para “issues” (relativo)
+
+**Código:**
+```md
+[Issues](/issues)
+```
+
+**Resultado:**
+[Issues](/issues)
+
+---
+
+264) Link para “pulls” (relativo)
+
+**Código:**
+```md
+[Pull Requests](/pulls)
+```
+
+**Resultado:**
+[Pull Requests](/pulls)
+
+---
+
+265) Link para “releases” (relativo)
+
+**Código:**
+```md
+[Releases](/releases)
+```
+
+**Resultado:**
+[Releases](/releases)
+
+---
+
+266) Link para “compare” (relativo)
+
+**Código:**
+```md
+[Compare](/compare)
+```
+
+**Resultado:**
+[Compare](/compare)
+
+---
+
+267) Link para “discussions” (relativo; se habilitado)
+
+**Código:**
+```md
+[Discussions](/discussions)
+```
+
+**Resultado:**
+[Discussions](/discussions)
+
+---
+
+268) Link para “wiki” (relativo; se habilitado)
+
+**Código:**
+```md
+[Wiki](/wiki)
+```
+
+**Resultado:**
+[Wiki](/wiki)
+
+---
+
+269) Link para “projects” (relativo; se habilitado)
+
+**Código:**
+```md
+[Projects](/projects)
+```
+
+**Resultado:**
+[Projects](/projects)
+
+---
+
+270) Link para “security policy” (padrão)
+
+**Código:**
+```md
+[Security](SECURITY.md)
+```
+
+**Resultado:**
+[Security](SECURITY.md)
+
+---
+
+271) Link para “code of conduct”
+
+**Código:**
+```md
+[Código de Conduta](CODE_OF_CONDUCT.md)
+```
+
+**Resultado:**
+[Código de Conduta](CODE_OF_CONDUCT.md)
+
+---
+
+272) Link para “contributing”
+
+**Código:**
+```md
+[Contribuindo](CONTRIBUTING.md)
+```
+
+**Resultado:**
+[Contribuindo](CONTRIBUTING.md)
+
+---
+
+273) Link para “changelog”
+
+**Código:**
+```md
+[Changelog](CHANGELOG.md)
+```
+
+**Resultado:**
+[Changelog](CHANGELOG.md)
+
+---
+
+274) Link para arquivo com âncora (linha) — formato de exemplo (você substitui pela URL real)
+
+**Código:**
+```md
+Veja `src/index.ts` nas linhas 10–20 (link direto se você colocar a URL do GitHub com #L10-L20).
+```
+
+**Resultado:**
+Veja `src/index.ts` nas linhas 10–20 (link direto se você colocar a URL do GitHub com #L10-L20).
+
+---
+
+275) Link interno para “instalação” (depende do slug do GitHub)
+
+**Código:**
+```md
+## Instalação
+Voltar: [Instalação](#instalação)
+```
+
+**Resultado:**
+## Instalação
+Voltar: [Instalação](#instalação)
+
+---
+
+276) Heading com pontuação (slug pode variar)
+
+**Código:**
+```md
+## O que é isso?
+Ir: [O que é isso?](#o-que-é-isso)
+```
+
+**Resultado:**
+## O que é isso?
+Ir: [O que é isso?](#o-que-é-isso)
+
+---
+
+277) Heading duplicado (pode gerar slugs com sufixo)
+
+**Código:**
+```md
+## Uso
+## Uso
+```
+
+**Resultado:**
+## Uso
+## Uso
+
+---
+
+278) Âncora manual para evitar slug “misterioso”
+
+**Código:**
+```html
+<a id="uso-cli"></a>
+
+## Uso (CLI)
+Ir: [Uso CLI](#uso-cli)
+```
+
+**Resultado:**
+<a id="uso-cli"></a>
+
+## Uso (CLI)
+Ir: [Uso CLI](#uso-cli)
+
+---
+
+279) Link para seção com acento (GitHub normaliza)
+
+**Código:**
+```md
+## Configuração
+[Ir](#configuração)
+```
+
+**Resultado:**
+## Configuração
+[Ir](#configuração)
+
+---
+
+280) Link para hash externo
+
+**Código:**
+```md
+[Seção da página](https://example.com/docs#quickstart)
+```
+
+**Resultado:**
+[Seção da página](https://example.com/docs#quickstart)
+
+---
+
+281) Link “download” (o browser decide)
+
+**Código:**
+```md
+[Baixar ZIP](https://example.com/arquivo.zip)
+```
+
+**Resultado:**
+[Baixar ZIP](https://example.com/arquivo.zip)
+
+---
+
+282) Link com texto em `<code>`
+
+**Código:**
+```md
+Use <a href="https://example.com"><code>--help</code></a>.
+```
+
+**Resultado:**
+Use <a href="https://example.com"><code>--help</code></a>.
+
+---
+
+283) Link com `target="_blank"` (GitHub pode ignorar/limitar; mas geralmente funciona em HTML)
+
+**Código:**
+```html
+<a href="https://example.com" target="_blank" rel="noreferrer">Abrir em nova aba</a>
+```
+
+**Resultado:**
+<a href="https://example.com" target="_blank" rel="noreferrer">Abrir em nova aba</a>
+
+---
+
+284) Link em imagem (HTML)
+
+**Código:**
+```html
+<a href="https://example.com">
+  <img src="https://placehold.co/200x80/111827/ffffff.png?text=CLICK" width="200" alt="Click">
+</a>
+```
+
+**Resultado:**
+<a href="https://example.com">
+  <img src="https://placehold.co/200x80/111827/ffffff.png?text=CLICK" width="200" alt="Click">
+</a>
+
+---
+
+285) “Botão” usando shields + label
+
+**Código:**
+```md
+[![Start](https://img.shields.io/badge/Start-Get%20Started-success)](https://example.com/start)
+```
+
+**Resultado:**
+[![Start](https://img.shields.io/badge/Start-Get%20Started-success)](https://example.com/start)
+
+---
+
+286) Badge “stars” (exemplo; normalmente usa o slug do repo)
+
+**Código:**
+```md
+![Stars](https://img.shields.io/badge/stars-dynamic-lightgrey)
+```
+
+**Resultado:**
+![Stars](https://img.shields.io/badge/stars-dynamic-lightgrey)
+
+---
+
+287) Link com texto e ícone
+
+**Código:**
+```md
+➡️ [Próxima seção](#seção-i--badges-e-metadata-291--360)
+```
+
+**Resultado:**
+➡️ [Próxima seção](#seção-i--badges-e-metadata-291--360)
+
+---
+
+288) Navegação “voltar ao topo” (com âncora)
+
+**Código:**
+```html
+<a id="top"></a>
+
+Voltar ao [topo](#top).
+```
+
+**Resultado:**
+<a id="top"></a>
+
+Voltar ao [topo](#top).
+
+---
+
+289) Link para um arquivo específico no branch (relativo)
+
+**Código:**
+```md
+[Ver package.json](/blob/main/package.json)
+```
+
+**Resultado:**
+[Ver package.json](/blob/main/package.json)
+
+---
+
+290) Link para uma pasta no branch (relativo)
+
+**Código:**
+```md
+[Ver src](/tree/main/src)
+```
+
+**Resultado:**
+[Ver src](/tree/main/src)
+
+---
+
+## Seção I — Badges, “metadata visual” e cabeçalho de README (291–360)
+
+291) Badge simples (texto)
+
+**Código:**
+```md
+![status](https://img.shields.io/badge/status-stable-brightgreen)
+```
+
+**Resultado:**
+![status](https://img.shields.io/badge/status-stable-brightgreen)
+
+---
+
+292) Badge com hífen e cor
+
+**Código:**
+```md
+![version](https://img.shields.io/badge/version-1.0.0-blue)
+```
+
+**Resultado:**
+![version](https://img.shields.io/badge/version-1.0.0-blue)
+
+---
+
+293) Badge com espaços (URL-encoded)
+
+**Código:**
+```md
+![platform](https://img.shields.io/badge/platform-linux%20%7C%20mac%20%7C%20windows-lightgrey)
+```
+
+**Resultado:**
+![platform](https://img.shields.io/badge/platform-linux%20%7C%20mac%20%7C%20windows-lightgrey)
+
+---
+
+294) Badge com “label” e “message”
+
+**Código:**
+```md
+![build](https://img.shields.io/badge/build-passing-22c55e)
+```
+
+**Resultado:**
+![build](https://img.shields.io/badge/build-passing-22c55e)
+
+---
+
+295) Badge clicável
+
+**Código:**
+```md
+[![docs](https://img.shields.io/badge/docs-online-blue)](https://example.com/docs)
+```
+
+**Resultado:**
+[![docs](https://img.shields.io/badge/docs-online-blue)](https://example.com/docs)
+
+---
+
+296) Badge “license” (exemplo genérico)
+
+**Código:**
+```md
+![license](https://img.shields.io/badge/license-MIT-blue)
+```
+
+**Resultado:**
+![license](https://img.shields.io/badge/license-MIT-blue)
+
+---
+
+297) Badge “PRs welcome”
+
+**Código:**
+```md
+![prs](https://img.shields.io/badge/PRs-welcome-brightgreen)
+```
+
+**Resultado:**
+![prs](https://img.shields.io/badge/PRs-welcome-brightgreen)
+
+---
+
+298) Badge “made with”
+
+**Código:**
+```md
+![made](https://img.shields.io/badge/made%20with-Markdown-blueviolet)
+```
+
+**Resultado:**
+![made](https://img.shields.io/badge/made%20with-Markdown-blueviolet)
+
+---
+
+299) Badge “maintenance”
+
+**Código:**
+```md
+![maintained](https://img.shields.io/badge/maintained-yes-22c55e)
+```
+
+**Resultado:**
+![maintained](https://img.shields.io/badge/maintained-yes-22c55e)
+
+---
+
+300) Badge “contributions”
+
+**Código:**
+```md
+![contrib](https://img.shields.io/badge/contributions-welcome-orange)
+```
+
+**Resultado:**
+![contrib](https://img.shields.io/badge/contributions-welcome-orange)
+
+---
+
+301) Vários badges na mesma linha
+
+**Código:**
+```md
+![a](https://img.shields.io/badge/A-1-blue) ![b](https://img.shields.io/badge/B-2-green) ![c](https://img.shields.io/badge/C-3-orange)
+```
+
+**Resultado:**
+![a](https://img.shields.io/badge/A-1-blue) ![b](https://img.shields.io/badge/B-2-green) ![c](https://img.shields.io/badge/C-3-orange)
+
+---
+
+302) Badges centralizados (HTML)
+
+**Código:**
+```html
+<p align="center">
+  <img alt="A" src="https://img.shields.io/badge/A-1-blue">
+  <img alt="B" src="https://img.shields.io/badge/B-2-green">
+  <img alt="C" src="https://img.shields.io/badge/C-3-orange">
+</p>
+```
+
+**Resultado:**
+<p align="center">
+  <img alt="A" src="https://img.shields.io/badge/A-1-blue">
+  <img alt="B" src="https://img.shields.io/badge/B-2-green">
+  <img alt="C" src="https://img.shields.io/badge/C-3-orange">
+</p>
+
+---
+
+303) Cabeçalho com logo + título (layout HTML)
+
+**Código:**
+```html
+<p align="center">
+  <img src="https://placehold.co/96x96/111827/ffffff.png?text=LOGO" width="96" alt="Logo">
+</p>
+
+<h1 align="center">Meu Projeto</h1>
+<p align="center">Uma frase curta sobre o que ele faz.</p>
+```
+
+**Resultado:**
+<p align="center">
+  <img src="https://placehold.co/96x96/111827/ffffff.png?text=LOGO" width="96" alt="Logo">
+</p>
+
+<h1 align="center">Meu Projeto</h1>
+<p align="center">Uma frase curta sobre o que ele faz.</p>
+
+---
+
+304) Subtítulo com links (centralizado)
+
+**Código:**
+```html
+<p align="center">
+  <a href="https://example.com">Site</a> •
+  <a href="https://example.com/docs">Docs</a> •
+  <a href="/issues">Issues</a>
+</p>
+```
+
+**Resultado:**
+<p align="center">
+  <a href="https://example.com">Site</a> •
+  <a href="https://example.com/docs">Docs</a> •
+  <a href="/issues">Issues</a>
+</p>
+
+---
+
+305) Separador “visual” abaixo do cabeçalho
+
+**Código:**
+```md
+---
+
+## Visão Geral
+```
+
+**Resultado:**
+---
+
+## Visão Geral
+
+---
+
+306) Badge “downloads” (genérico)
+
+**Código:**
+```md
+![downloads](https://img.shields.io/badge/downloads-1k%2Fmonth-blue)
+```
+
+**Resultado:**
+![downloads](https://img.shields.io/badge/downloads-1k%2Fmonth-blue)
+
+---
+
+307) Badge com “style=flat”
+
+**Código:**
+```md
+![flat](https://img.shields.io/badge/style-flat-blue?style=flat)
+```
+
+**Resultado:**
+![flat](https://img.shields.io/badge/style-flat-blue?style=flat)
+
+---
+
+308) Badge com “style=flat-square”
+
+**Código:**
+```md
+![flat-square](https://img.shields.io/badge/style-flat--square-blue?style=flat-square)
+```
+
+**Resultado:**
+![flat-square](https://img.shields.io/badge/style-flat--square-blue?style=flat-square)
+
+---
+
+309) Badge com “style=for-the-badge”
+
+**Código:**
+```md
+![for-the-badge](https://img.shields.io/badge/style-for--the--badge-blue?style=for-the-badge)
+```
+
+**Resultado:**
+![for-the-badge](https://img.shields.io/badge/style-for--the--badge-blue?style=for-the-badge)
+
+---
+
+310) Badge com logo (exemplo genérico)
+
+**Código:**
+```md
+![logo](https://img.shields.io/badge/logo-github-181717?logo=github&logoColor=white)
+```
+
+**Resultado:**
+![logo](https://img.shields.io/badge/logo-github-181717?logo=github&logoColor=white)
+
+---
+
+311) Badge com “labelColor”
+
+**Código:**
+```md
+![labelColor](https://img.shields.io/badge/labelColor-demo-blue?labelColor=111827)
+```
+
+**Resultado:**
+![labelColor](https://img.shields.io/badge/labelColor-demo-blue?labelColor=111827)
+
+---
+
+312) Badge com “color” custom (hex sem #)
+
+**Código:**
+```md
+![hex](https://img.shields.io/badge/color-ff00ff-ff00ff)
+```
+
+**Resultado:**
+![hex](https://img.shields.io/badge/color-ff00ff-ff00ff)
+
+---
+
+313) Badge “stars” (placeholder)
+
+**Código:**
+```md
+![stars](https://img.shields.io/badge/stars-1234-yellow)
+```
+
+**Resultado:**
+![stars](https://img.shields.io/badge/stars-1234-yellow)
+
+---
+
+314) Badge “forks” (placeholder)
+
+**Código:**
+```md
+![forks](https://img.shields.io/badge/forks-321-lightgrey)
+```
+
+**Resultado:**
+![forks](https://img.shields.io/badge/forks-321-lightgrey)
+
+---
+
+315) Badge “issues” (placeholder)
+
+**Código:**
+```md
+![issues](https://img.shields.io/badge/issues-12-red)
+```
+
+**Resultado:**
+![issues](https://img.shields.io/badge/issues-12-red)
+
+---
+
+316) Badge “PRs” (placeholder)
+
+**Código:**
+```md
+![prs](https://img.shields.io/badge/PRs-5-blue)
+```
+
+**Resultado:**
+![prs](https://img.shields.io/badge/PRs-5-blue)
+
+---
+
+317) Badge “last commit” (placeholder)
+
+**Código:**
+```md
+![last commit](https://img.shields.io/badge/last%20commit-today-22c55e)
+```
+
+**Resultado:**
+![last commit](https://img.shields.io/badge/last%20commit-today-22c55e)
+
+---
+
+318) Badge “tested with” (placeholder)
+
+**Código:**
+```md
+![tested](https://img.shields.io/badge/tested%20with-jest-c21325?logo=jest&logoColor=white)
+```
+
+**Resultado:**
+![tested](https://img.shields.io/badge/tested%20with-jest-c21325?logo=jest&logoColor=white)
+
+---
+
+319) “Stack badges” (uma por linha)
+
+**Código:**
+```md
+![a](https://img.shields.io/badge/Node-20-22c55e?logo=node.js&logoColor=white)
+![b](https://img.shields.io/badge/TypeScript-5-3b82f6?logo=typescript&logoColor=white)
+![c](https://img.shields.io/badge/License-MIT-blue)
+```
+
+**Resultado:**
+![a](https://img.shields.io/badge/Node-20-22c55e?logo=node.js&logoColor=white)  
+![b](https://img.shields.io/badge/TypeScript-5-3b82f6?logo=typescript&logoColor=white)  
+![c](https://img.shields.io/badge/License-MIT-blue)
+
+---
+
+320) Badge como “botão” grande (for-the-badge + link)
+
+**Código:**
+```md
+[![Get Started](https://img.shields.io/badge/Get%20Started-Click-blue?style=for-the-badge)](https://example.com/start)
+```
+
+**Resultado:**
+[![Get Started](https://img.shields.io/badge/Get%20Started-Click-blue?style=for-the-badge)](https://example.com/start)
+
+---
+
+321) Ícone + texto em linha (HTML)
+
+**Código:**
+```html
+<img src="https://placehold.co/16x16/22c55e/ffffff.png?text=%E2%9C%93" width="16" alt="ok">
+<span>Build passando</span>
+```
+
+**Resultado:**
+<img src="https://placehold.co/16x16/22c55e/ffffff.png?text=%E2%9C%93" width="16" alt="ok">
+<span>Build passando</span>
+
+---
+
+322) Linha “de destaque” com imagem (banner)
+
+**Código:**
+```md
+![Banner](https://placehold.co/1200x300/111827/ffffff.png?text=README+BANNER)
+```
+
+**Resultado:**
+![Banner](https://placehold.co/1200x300/111827/ffffff.png?text=README+BANNER)
+
+---
+
+323) Banner clicável
+
+**Código:**
+```md
+[![Banner](https://placehold.co/1200x300/111827/ffffff.png?text=CLICK+ME)](https://example.com)
+```
+
+**Resultado:**
+[![Banner](https://placehold.co/1200x300/111827/ffffff.png?text=CLICK+ME)](https://example.com)
+
+---
+
+324) Espaçamento com `<br>` (use com moderação)
+
+**Código:**
+```html
+Linha 1<br><br>
+Linha 2
+```
+
+**Resultado:**
+Linha 1<br><br>
+Linha 2
+
+---
+
+325) “Divider” custom (imagem)
+
+**Código:**
+```md
+![Divider](https://placehold.co/1200x24/111827/ffffff.png?text=)
+```
+
+**Resultado:**
+![Divider](https://placehold.co/1200x24/111827/ffffff.png?text=)
+
+---
+
+326) Badges em tabela (layout compacto)
+
+**Código:**
+```md
+| Build | Docs |
+|---|---|
+| ![build](https://img.shields.io/badge/build-passing-22c55e) | [![docs](https://img.shields.io/badge/docs-online-blue)](https://example.com/docs) |
+```
+
+**Resultado:**
+| Build | Docs |
+|---|---|
+| ![build](https://img.shields.io/badge/build-passing-22c55e) | [![docs](https://img.shields.io/badge/docs-online-blue)](https://example.com/docs) |
+
+---
+
+327) Seção “Features” com ícones (Markdown puro)
+
+**Código:**
+```md
+## Features
+- ✅ Rápido
+- 🔒 Seguro
+- ⚙️ Configurável
+```
+
+**Resultado:**
+## Features
+- ✅ Rápido
+- 🔒 Seguro
+- ⚙️ Configurável
+
+---
+
+328) Seção “Quickstart” com bloco bash
+
+**Código:**
+```md
+## Quickstart
+```bash
+npm i
+npm start
+```
+```
+
+**Resultado:**
+## Quickstart
+```bash
+npm i
+npm start
+```
+
+---
+
+329) “Instalação” com passos numerados
+
+**Código:**
+```md
+## Instalação
+1. Clone
+2. Instale deps
+3. Rode
+```
+
+**Resultado:**
+## Instalação
+1. Clone
+2. Instale deps
+3. Rode
+
+---
+
+330) “Uso” com exemplo e saída
+
+**Código:**
+```md
+## Uso
+```bash
+meuapp --help
+```
+
+Saída:
+```text
+Usage: meuapp [options]
+```
+```
+
+**Resultado:**
+## Uso
+```bash
+meuapp --help
+```
+
+Saída:
+```text
+Usage: meuapp [options]
+```
+
+---
+
+331) Seção “Roadmap” com checklist
+
+**Código:**
+```md
+## Roadmap
+- [x] MVP
+- [ ] Plugins
+- [ ] Cloud sync
+```
+
+**Resultado:**
+## Roadmap
+- [x] MVP
+- [ ] Plugins
+- [ ] Cloud sync
+
+---
+
+332) Seção “Contribuição” com links
+
+**Código:**
+```md
+## Contribuição
+Leia [CONTRIBUTING.md](CONTRIBUTING.md) e [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+```
+
+**Resultado:**
+## Contribuição
+Leia [CONTRIBUTING.md](CONTRIBUTING.md) e [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+
+---
+
+333) Seção “Licença” padrão
+
+**Código:**
+```md
+## Licença
+Distribuído sob a licença MIT. Veja [LICENSE](LICENSE).
+```
+
+**Resultado:**
+## Licença
+Distribuído sob a licença MIT. Veja [LICENSE](LICENSE).
+
+---
+
+334) “Changelog” com datas
+
+**Código:**
+```md
+## Changelog
+- 2026-03-15 — docs: melhorias no README
+```
+
+**Resultado:**
+## Changelog
+- 2026-03-15 — docs: melhorias no README
+
+---
+
+335) “Back to top” em badge
+
+**Código:**
+```md
+[![Topo](https://img.shields.io/badge/%E2%86%91-top-black)](#top)
+```
+
+**Resultado:**
+[![Topo](https://img.shields.io/badge/%E2%86%91-top-black)](#top)
+
+---
+
+336) “Seção colapsável” para manter README curto
+
+**Código:**
+```md
+<details>
+  <summary><b>Ver mais</b></summary>
+
+  Conteúdo extra aqui.
+</details>
+```
+
+**Resultado:**
+<details>
+  <summary><b>Ver mais</b></summary>
+
+  Conteúdo extra aqui.
+</details>
+
+---
+
+337) “Captura de tela” com largura controlada
+
+**Código:**
+```html
+<img src="https://placehold.co/900x450/111827/ffffff.png?text=Screenshot" width="700" alt="Screenshot">
+```
+
+**Resultado:**
+<img src="https://placehold.co/900x450/111827/ffffff.png?text=Screenshot" width="700" alt="Screenshot">
+
+---
+
+338) Galeria simples (2 imagens lado a lado) com tabela HTML
+
+**Código:**
+```html
+<table>
+  <tr>
+    <td><img src="https://placehold.co/420x240/111827/ffffff.png?text=UI+1" width="420" alt="ui1"></td>
+    <td><img src="https://placehold.co/420x240/111827/ffffff.png?text=UI+2" width="420" alt="ui2"></td>
+  </tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr>
+    <td><img src="https://placehold.co/420x240/111827/ffffff.png?text=UI+1" width="420" alt="ui1"></td>
+    <td><img src="https://placehold.co/420x240/111827/ffffff.png?text=UI+2" width="420" alt="ui2"></td>
+  </tr>
+</table>
+
+---
+
+339) Lista de “recursos” como tabela
+
+**Código:**
+```md
+| Recurso | Link |
+|---|---|
+| Docs | [Abrir](https://example.com/docs) |
+| Roadmap | [Abrir](https://example.com/roadmap) |
+```
+
+**Resultado:**
+| Recurso | Link |
+|---|---|
+| Docs | [Abrir](https://example.com/docs) |
+| Roadmap | [Abrir](https://example.com/roadmap) |
+
+---
+
+340) Badge para “open source”
+
+**Código:**
+```md
+![oss](https://img.shields.io/badge/open%20source-yes-22c55e)
+```
+
+**Resultado:**
+![oss](https://img.shields.io/badge/open%20source-yes-22c55e)
+
+---
+
+341) Badge para “status: beta”
+
+**Código:**
+```md
+![beta](https://img.shields.io/badge/status-beta-f59e0b)
+```
+
+**Resultado:**
+![beta](https://img.shields.io/badge/status-beta-f59e0b)
+
+---
+
+342) Badge para “status: deprecated”
+
+**Código:**
+```md
+![deprecated](https://img.shields.io/badge/status-deprecated-ef4444)
+```
+
+**Resultado:**
+![deprecated](https://img.shields.io/badge/status-deprecated-ef4444)
+
+---
+
+343) Badge “docs: in progress”
+
+**Código:**
+```md
+![docs](https://img.shields.io/badge/docs-in%20progress-blue)
+```
+
+**Resultado:**
+![docs](https://img.shields.io/badge/docs-in%20progress-blue)
+
+---
+
+344) Badge “coverage” (placeholder)
+
+**Código:**
+```md
+![coverage](https://img.shields.io/badge/coverage-85%25-22c55e)
+```
+
+**Resultado:**
+![coverage](https://img.shields.io/badge/coverage-85%25-22c55e)
+
+---
+
+345) Badge “security” (placeholder)
+
+**Código:**
+```md
+![security](https://img.shields.io/badge/security-audited-22c55e)
+```
+
+**Resultado:**
+![security](https://img.shields.io/badge/security-audited-22c55e)
+
+---
+
+346) Badge com logo “npm” (exemplo)
+
+**Código:**
+```md
+![npm](https://img.shields.io/badge/npm-package-cb3837?logo=npm&logoColor=white)
+```
+
+**Resultado:**
+![npm](https://img.shields.io/badge/npm-package-cb3837?logo=npm&logoColor=white)
+
+---
+
+347) Badge com logo “docker” (exemplo)
+
+**Código:**
+```md
+![docker](https://img.shields.io/badge/docker-ready-2496ed?logo=docker&logoColor=white)
+```
+
+**Resultado:**
+![docker](https://img.shields.io/badge/docker-ready-2496ed?logo=docker&logoColor=white)
+
+---
+
+348) Badge com logo “python” (exemplo)
+
+**Código:**
+```md
+![python](https://img.shields.io/badge/python-3.12-3776ab?logo=python&logoColor=white)
+```
+
+**Resultado:**
+![python](https://img.shields.io/badge/python-3.12-3776ab?logo=python&logoColor=white)
+
+---
+
+349) Badge com logo “go” (exemplo)
+
+**Código:**
+```md
+![go](https://img.shields.io/badge/go-1.22-00ADD8?logo=go&logoColor=white)
+```
+
+**Resultado:**
+![go](https://img.shields.io/badge/go-1.22-00ADD8?logo=go&logoColor=white)
+
+---
+
+350) Badge com logo “rust” (exemplo)
+
+**Código:**
+```md
+![rust](https://img.shields.io/badge/rust-stable-000000?logo=rust&logoColor=white)
+```
+
+**Resultado:**
+![rust](https://img.shields.io/badge/rust-stable-000000?logo=rust&logoColor=white)
+
+---
+
+351) Badge com logo “linux” (exemplo)
+
+**Código:**
+```md
+![linux](https://img.shields.io/badge/linux-supported-fcc624?logo=linux&logoColor=black)
+```
+
+**Resultado:**
+![linux](https://img.shields.io/badge/linux-supported-fcc624?logo=linux&logoColor=black)
+
+---
+
+352) “Seção com coluna dupla” (layout HTML em tabela)
+
+**Código:**
+```html
+<table>
+  <tr>
+    <td width="50%">
+      <h3>Por que usar?</h3>
+      <ul>
+        <li>Fácil</li>
+        <li>Rápido</li>
+      </ul>
+    </td>
+    <td width="50%">
+      <h3>Para quem?</h3>
+      <ul>
+        <li>Devs</li>
+        <li>Times</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr>
+    <td width="50%">
+      <h3>Por que usar?</h3>
+      <ul>
+        <li>Fácil</li>
+        <li>Rápido</li>
+      </ul>
+    </td>
+    <td width="50%">
+      <h3>Para quem?</h3>
+      <ul>
+        <li>Devs</li>
+        <li>Times</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+353) “Bot��es” lado a lado (HTML)
+
+**Código:**
+```html
+<p>
+  <a href="https://example.com/start">
+    <img src="https://img.shields.io/badge/Get%20Started-Click-blue?style=for-the-badge" alt="Get Started">
+  </a>
+  <a href="https://example.com/docs">
+    <img src="https://img.shields.io/badge/Docs-Open-111827?style=for-the-badge" alt="Docs">
+  </a>
+</p>
+```
+
+**Resultado:**
+<p>
+  <a href="https://example.com/start">
+    <img src="https://img.shields.io/badge/Get%20Started-Click-blue?style=for-the-badge" alt="Get Started">
+  </a>
+  <a href="https://example.com/docs">
+    <img src="https://img.shields.io/badge/Docs-Open-111827?style=for-the-badge" alt="Docs">
+  </a>
+</p>
+
+---
+
+354) “Linha de status” (texto + ícone)
+
+**Código:**
+```md
+✅ Build: ok • 📦 Release: estável • 📄 Docs: atualizadas
+```
+
+**Resultado:**
+✅ Build: ok • 📦 Release: estável • 📄 Docs: atualizadas
+
+---
+
+355) Destaque com `<sub>` e `<sup>`
+
+**Código:**
+```html
+Versão <sup>beta</sup> • H<sub>2</sub>O
+```
+
+**Resultado:**
+Versão <sup>beta</sup> • H<sub>2</sub>O
+
+---
+
+356) “Texto pequeno” para nota no cabeçalho
+
+**Código:**
+```html
+<small>Última atualização: 2026-03-15</small>
+```
+
+**Resultado:**
+<small>Última atualização: 2026-03-15</small>
+
+---
+
+357) Link “voltar ao topo” no fim da seção
+
+**Código:**
+```md
+[↑ Topo](#top)
+```
+
+**Resultado:**
+[↑ Topo](#top)
+
+---
+
+358) Separar blocos de badges com `<p>`
+
+**Código:**
+```html
+<p>
+  <img src="https://img.shields.io/badge/status-stable-22c55e" alt="status">
+</p>
+<p>
+  <img src="https://img.shields.io/badge/license-MIT-blue" alt="license">
+</p>
+```
+
+**Resultado:**
+<p>
+  <img src="https://img.shields.io/badge/status-stable-22c55e" alt="status">
+</p>
+<p>
+  <img src="https://img.shields.io/badge/license-MIT-blue" alt="license">
+</p>
+
+---
+
+359) Badge “built with” (exemplo)
+
+**Código:**
+```md
+![built](https://img.shields.io/badge/built%20with-GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)
+```
+
+**Resultado:**
+![built](https://img.shields.io/badge/built%20with-GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)
+
+---
+
+360) “Header completo” (logo + title + badges + links)
+
+**Código:**
+```html
+<a id="top"></a>
+
+<p align="center">
+  <img src="https://placehold.co/96x96/111827/ffffff.png?text=LOGO" width="96" alt="Logo">
+</p>
+
+<h1 align="center">Meu Projeto</h1>
+<p align="center">Descrição curta e objetiva.</p>
+
+<p align="center">
+  <a href="https://example.com">Site</a> •
+  <a href="https://example.com/docs">Docs</a> •
+  <a href="/issues">Issues</a>
+</p>
+
+<p align="center">
+  <img alt="status" src="https://img.shields.io/badge/status-stable-22c55e">
+  <img alt="license" src="https://img.shields.io/badge/license-MIT-blue">
+  <img alt="build" src="https://img.shields.io/badge/build-passing-22c55e">
+</p>
+```
+
+**Resultado:**
+<a id="top"></a>
+
+<p align="center">
+  <img src="https://placehold.co/96x96/111827/ffffff.png?text=LOGO" width="96" alt="Logo">
+</p>
+
+<h1 align="center">Meu Projeto</h1>
+<p align="center">Descrição curta e objetiva.</p>
+
+<p align="center">
+  <a href="https://example.com">Site</a> •
+  <a href="https://example.com/docs">Docs</a> •
+  <a href="/issues">Issues</a>
+</p>
+
+<p align="center">
+  <img alt="status" src="https://img.shields.io/badge/status-stable-22c55e">
+  <img alt="license" src="https://img.shields.io/badge/license-MIT-blue">
+  <img alt="build" src="https://img.shields.io/badge/build-passing-22c55e">
+</p>
+
+<!--
+GITHUB-README-DICIONARIO-1000+-PARTE-04.md
+Parte 4/12 — Itens 361–480
+Formato: Código + Resultado (GitHub README / GFM)
+-->
+
+## Seção J — Blocos de código (fenced) e syntax highlighting (361–430)
+
+361) Bloco de código sem linguagem (fence)
+
+**Código:**
+```md
+```
+texto literal
+```
+```
+
+**Resultado:**
+```
+texto literal
+```
+
+---
+
+362) Bloco “text” (bom para saídas)
+
+**Código:**
+```md
+```text
+linha 1
+linha 2
+```
+```
+
+**Resultado:**
+```text
+linha 1
+linha 2
+```
+
+---
+
+363) Bloco `bash`
+
+**Código:**
+```md
+```bash
+echo "Olá"
+ls -la
+```
+```
+
+**Resultado:**
+```bash
+echo "Olá"
+ls -la
+```
+
+---
+
+364) Bloco `sh`
+
+**Código:**
+```md
+```sh
+set -e
+printf "ok\n"
+```
+```
+
+**Resultado:**
+```sh
+set -e
+printf "ok\n"
+```
+
+---
+
+365) Bloco `powershell`
+
+**Código:**
+```md
+```powershell
+Get-ChildItem
+Write-Host "Olá"
+```
+```
+
+**Resultado:**
+```powershell
+Get-ChildItem
+Write-Host "Olá"
+```
+
+---
+
+366) Bloco `cmd` (Windows batch)
+
+**Código:**
+```md
+```bat
+@echo off
+echo Hello
+dir
+```
+```
+
+**Resultado:**
+```bat
+@echo off
+echo Hello
+dir
+```
+
+---
+
+367) Bloco `python`
+
+**Código:**
+```md
+```python
+print("Olá, mundo")
+```
+```
+
+**Resultado:**
+```python
+print("Olá, mundo")
+```
+
+---
+
+368) Bloco `javascript`
+
+**Código:**
+```md
+```javascript
+console.log("Olá");
+```
+```
+
+**Resultado:**
+```javascript
+console.log("Olá");
+```
+
+---
+
+369) Bloco `ts` (TypeScript)
+
+**Código:**
+```md
+```ts
+export const sum = (a: number, b: number) => a + b;
+```
+```
+
+**Resultado:**
+```ts
+export const sum = (a: number, b: number) => a + b;
+```
+
+---
+
+370) Bloco `json`
+
+**Código:**
+```md
+```json
+{ "name": "demo", "private": true }
+```
+```
+
+**Resultado:**
+```json
+{ "name": "demo", "private": true }
+```
+
+---
+
+371) Bloco `yaml`
+
+**Código:**
+```md
+```yaml
+name: CI
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+```
+```
+
+**Resultado:**
+```yaml
+name: CI
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+```
+
+---
+
+372) Bloco `toml`
+
+**Código:**
+```md
+```toml
+[tool.demo]
+enabled = true
+```
+```
+
+**Resultado:**
+```toml
+[tool.demo]
+enabled = true
+```
+
+---
+
+373) Bloco `ini`
+
+**Código:**
+```md
+```ini
+[core]
+editor=code
+```
+```
+
+**Resultado:**
+```ini
+[core]
+editor=code
+```
+
+---
+
+374) Bloco `env` (variáveis)
+
+**Código:**
+```md
+```env
+NODE_ENV=production
+PORT=3000
+```
+```
+
+**Resultado:**
+```env
+NODE_ENV=production
+PORT=3000
+```
+
+---
+
+375) Bloco `dockerfile`
+
+**Código:**
+```md
+```dockerfile
+FROM node:20-alpine
+WORKDIR /app
+COPY . .
+RUN npm ci
+CMD ["npm","start"]
+```
+```
+
+**Resultado:**
+```dockerfile
+FROM node:20-alpine
+WORKDIR /app
+COPY . .
+RUN npm ci
+CMD ["npm","start"]
+```
+
+---
+
+376) Bloco `makefile`
+
+**Código:**
+```md
+```makefile
+build:
+	npm run build
+```
+```
+
+**Resultado:**
+```makefile
+build:
+	npm run build
+```
+
+---
+
+377) Bloco `c`
+
+**Código:**
+```md
+```c
+#include <stdio.h>
+int main(){ puts("ok"); }
+```
+```
+
+**Resultado:**
+```c
+#include <stdio.h>
+int main(){ puts("ok"); }
+```
+
+---
+
+378) Bloco `cpp`
+
+**Código:**
+```md
+```cpp
+#include <iostream>
+int main(){ std::cout << "ok\n"; }
+```
+```
+
+**Resultado:**
+```cpp
+#include <iostream>
+int main(){ std::cout << "ok\n"; }
+```
+
+---
+
+379) Bloco `java`
+
+**Código:**
+```md
+```java
+class Main { public static void main(String[] a){ System.out.println("ok"); } }
+```
+```
+
+**Resultado:**
+```java
+class Main { public static void main(String[] a){ System.out.println("ok"); } }
+```
+
+---
+
+380) Bloco `kotlin`
+
+**Código:**
+```md
+```kotlin
+fun main() { println("ok") }
+```
+```
+
+**Resultado:**
+```kotlin
+fun main() { println("ok") }
+```
+
+---
+
+381) Bloco `go`
+
+**Código:**
+```md
+```go
+package main
+import "fmt"
+func main(){ fmt.Println("ok") }
+```
+```
+
+**Resultado:**
+```go
+package main
+import "fmt"
+func main(){ fmt.Println("ok") }
+```
+
+---
+
+382) Bloco `rust`
+
+**Código:**
+```md
+```rust
+fn main() {
+  println!("ok");
+}
+```
+```
+
+**Resultado:**
+```rust
+fn main() {
+  println!("ok");
+}
+```
+
+---
+
+383) Bloco `php`
+
+**Código:**
+```md
+```php
+<?php
+echo "ok\n";
+```
+```
+
+**Resultado:**
+```php
+<?php
+echo "ok\n";
+```
+
+---
+
+384) Bloco `ruby`
+
+**Código:**
+```md
+```rb
+puts "ok"
+```
+```
+
+**Resultado:**
+```rb
+puts "ok"
+```
+
+---
+
+385) Bloco `swift`
+
+**Código:**
+```md
+```swift
+print("ok")
+```
+```
+
+**Resultado:**
+```swift
+print("ok")
+```
+
+---
+
+386) Bloco `sql`
+
+**Código:**
+```md
+```sql
+SELECT 1 AS ok;
+```
+```
+
+**Resultado:**
+```sql
+SELECT 1 AS ok;
+```
+
+---
+
+387) Bloco `graphql`
+
+**Código:**
+```md
+```graphql
+query {
+  viewer { login }
+}
+```
+```
+
+**Resultado:**
+```graphql
+query {
+  viewer { login }
+}
+```
+
+---
+
+388) Bloco `http`
+
+**Código:**
+```md
+```http
+GET /health HTTP/1.1
+Host: example.com
+```
+```
+
+**Resultado:**
+```http
+GET /health HTTP/1.1
+Host: example.com
+```
+
+---
+
+389) Bloco `xml`
+
+**Código:**
+```md
+```xml
+<root>
+  <item id="1">ok</item>
+</root>
+```
+```
+
+**Resultado:**
+```xml
+<root>
+  <item id="1">ok</item>
+</root>
+```
+
+---
+
+390) Bloco `html`
+
+**Código:**
+```md
+```html
+<div><b>ok</b></div>
+```
+```
+
+**Resultado:**
+```html
+<div><b>ok</b></div>
+```
+
+---
+
+391) Bloco `css`
+
+**Código:**
+```md
+```css
+.container { display: flex; gap: 8px; }
+```
+```
+
+**Resultado:**
+```css
+.container { display: flex; gap: 8px; }
+```
+
+---
+
+392) Bloco `scss`
+
+**Código:**
+```md
+```scss
+$gap: 8px;
+.container { gap: $gap; }
+```
+```
+
+**Resultado:**
+```scss
+$gap: 8px;
+.container { gap: $gap; }
+```
+
+---
+
+393) Bloco `markdown` (meta)
+
+**Código:**
+````md
+```md
+# título
+**negrito**
+```
+
+````
+
+---
+
+<!--
+GITHUB-README-DICIONARIO-1000+-PARTE-04B.md
+Complemento da Parte 4/12 — Itens 394–431 (somente os que faltaram)
+Formato: Código + Resultado (GitHub README / GFM)
+-->
+
+## Complemento — Itens 394–431
+
+394) Bloco `diff` (muito útil em README)
+
+**Código:**
+```md
+```diff
+- removido
++ adicionado
+```
+```
+
+**Resultado:**
+```diff
+- removido
++ adicionado
+```
+
+---
+
+395) Bloco `jsonc` (JSON com comentário; highlight pode variar)
+
+**Código:**
+```md
+```jsonc
+{
+  // comentário
+  "name": "demo"
+}
+```
+```
+
+**Resultado:**
+```jsonc
+{
+  // comentário
+  "name": "demo"
+}
+```
+
+---
+
+396) Bloco `nginx`
+
+**Código:**
+```md
+```nginx
+server {
+  listen 80;
+  location / { return 200 "ok"; }
+}
+```
+```
+
+**Resultado:**
+```nginx
+server {
+  listen 80;
+  location / { return 200 "ok"; }
+}
+```
+
+---
+
+397) Bloco `apache`
+
+**Código:**
+```md
+```apache
+RewriteEngine On
+RewriteRule ^$ index.html [L]
+```
+```
+
+**Resultado:**
+```apache
+RewriteEngine On
+RewriteRule ^$ index.html [L]
+```
+
+---
+
+398) Bloco `conf` (config genérico)
+
+**Código:**
+```md
+```conf
+key=value
+```
+```
+
+**Resultado:**
+```conf
+key=value
+```
+
+---
+
+399) Bloco `log` para logs
+
+**Código:**
+```md
+```log
+2026-03-16T07:00:00Z INFO started
+2026-03-16T07:00:01Z WARN slow
+```
+```
+
+**Resultado:**
+```log
+2026-03-16T07:00:00Z INFO started
+2026-03-16T07:00:01Z WARN slow
+```
+
+---
+
+400) Bloco `csv`
+
+**Código:**
+```md
+```csv
+id,name
+1,Ana
+2,Leo
+```
+```
+
+**Resultado:**
+```csv
+id,name
+1,Ana
+2,Leo
+```
+
+---
+
+401) Bloco `mermaid` (no GitHub renderiza diagrama)
+
+**Código:**
+```md
+```mermaid
+flowchart LR
+  A[Start] --> B{Ok?}
+  B -->|Yes| C[Done]
+  B -->|No| D[Fix]
+```
+```
+
+**Resultado:**
+```mermaid
+flowchart LR
+  A[Start] --> B{Ok?}
+  B -->|Yes| C[Done]
+  B -->|No| D[Fix]
+```
+
+---
+
+402) Bloco `plantuml` (geralmente NÃO renderiza no README)
+
+**Código:**
+```md
+```plantuml
+@startuml
+Alice -> Bob: Hi
+@enduml
+```
+```
+
+**Resultado:**
+```plantuml
+@startuml
+Alice -> Bob: Hi
+@enduml
+```
+
+---
+
+403) Bloco `regex` (apenas highlight)
+
+**Código:**
+```md
+```regex
+^\d{4}-\d{2}-\d{2}$
+```
+```
+
+**Resultado:**
+```regex
+^\d{4}-\d{2}-\d{2}$
+```
+
+---
+
+404) Bloco `lua`
+
+**Código:**
+```md
+```lua
+print("ok")
+```
+```
+
+**Resultado:**
+```lua
+print("ok")
+```
+
+---
+
+405) Bloco `r`
+
+**Código:**
+```md
+```r
+cat("ok\n")
+```
+```
+
+**Resultado:**
+```r
+cat("ok\n")
+```
+
+---
+
+406) Bloco `julia`
+
+**Código:**
+```md
+```julia
+println("ok")
+```
+```
+
+**Resultado:**
+```julia
+println("ok")
+```
+
+---
+
+407) Bloco `haskell`
+
+**Código:**
+```md
+```haskell
+main = putStrLn "ok"
+```
+```
+
+**Resultado:**
+```haskell
+main = putStrLn "ok"
+```
+
+---
+
+408) Bloco `elixir`
+
+**Código:**
+```md
+```elixir
+IO.puts("ok")
+```
+```
+
+**Resultado:**
+```elixir
+IO.puts("ok")
+```
+
+---
+
+409) Bloco `csharp`
+
+**Código:**
+```md
+```csharp
+Console.WriteLine("ok");
+```
+```
+
+**Resultado:**
+```csharp
+Console.WriteLine("ok");
+```
+
+---
+
+410) Bloco `fsharp`
+
+**Código:**
+```md
+```fsharp
+printfn "ok"
+```
+```
+
+**Resultado:**
+```fsharp
+printfn "ok"
+```
+
+---
+
+411) Bloco `dart`
+
+**Código:**
+```md
+```dart
+void main() => print("ok");
+```
+```
+
+**Resultado:**
+```dart
+void main() => print("ok");
+```
+
+---
+
+412) Bloco `dart` (Flutter)
+
+**Código:**
+```md
+```dart
+Text("Hello");
+```
+```
+
+**Resultado:**
+```dart
+Text("Hello");
+```
+
+---
+
+413) Bloco `vue` (SFC)
+
+**Código:**
+```md
+```vue
+<template><div>ok</div></template>
+<script setup>const x = 1</script>
+<style scoped>div{color:red}</style>
+```
+```
+
+**Resultado:**
+```vue
+<template><div>ok</div></template>
+<script setup>const x = 1</script>
+<style scoped>div{color:red}</style>
+```
+
+---
+
+414) Bloco `svelte`
+
+**Código:**
+```md
+```svelte
+<script>
+  let x = 1;
+</script>
+
+<h1>{x}</h1>
+```
+```
+
+**Resultado:**
+```svelte
+<script>
+  let x = 1;
+</script>
+
+<h1>{x}</h1>
+```
+
+---
+
+415) Bloco `tsx` (React)
+
+**Código:**
+```md
+```tsx
+export function App() {
+  return <div>ok</div>;
+}
+```
+```
+
+**Resultado:**
+```tsx
+export function App() {
+  return <div>ok</div>;
+}
+```
+
+---
+
+416) Bloco `jsx`
+
+**Código:**
+```md
+```jsx
+export const App = () => <div>ok</div>;
+```
+```
+
+**Resultado:**
+```jsx
+export const App = () => <div>ok</div>;
+```
+
+---
+
+417) Bloco `proto` (Protocol Buffers)
+
+**Código:**
+```md
+```proto
+syntax = "proto3";
+message Ping { string msg = 1; }
+```
+```
+
+**Resultado:**
+```proto
+syntax = "proto3";
+message Ping { string msg = 1; }
+```
+
+---
+
+418) Bloco `gradle`
+
+**Código:**
+```md
+```gradle
+plugins { id "java" }
+```
+```
+
+**Resultado:**
+```gradle
+plugins { id "java" }
+```
+
+---
+
+419) Bloco `cmake`
+
+**Código:**
+```md
+```cmake
+cmake_minimum_required(VERSION 3.28)
+project(demo)
+```
+```
+
+**Resultado:**
+```cmake
+cmake_minimum_required(VERSION 3.28)
+project(demo)
+```
+
+---
+
+420) Bloco `kusto` (apenas highlight)
+
+**Código:**
+```md
+```kusto
+StormEvents | take 10
+```
+```
+
+**Resultado:**
+```kusto
+StormEvents | take 10
+```
+
+---
+
+421) Bloco `hcl` (Terraform)
+
+**Código:**
+```md
+```hcl
+resource "null_resource" "x" {}
+```
+```
+
+**Resultado:**
+```hcl
+resource "null_resource" "x" {}
+```
+
+---
+
+422) YAML estilo “Ansible” (é YAML)
+
+**Código:**
+```md
+```yaml
+- hosts: all
+  tasks:
+    - name: ping
+      ping:
+```
+```
+
+**Resultado:**
+```yaml
+- hosts: all
+  tasks:
+    - name: ping
+      ping:
+```
+
+---
+
+423) YAML estilo “GitHub Actions”
+
+**Código:**
+```md
+```yaml
+name: Test
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+```
+```
+
+**Resultado:**
+```yaml
+name: Test
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+```
+
+---
+
+424) Bloco `rst` (reStructuredText)
+
+**Código:**
+```md
+```rst
+Título
+======
+```
+```
+
+**Resultado:**
+```rst
+Título
+======
+```
+
+---
+
+425) Bloco `tex` (LaTeX highlight)
+
+**Código:**
+```md
+```tex
+E = mc^2
+```
+```
+
+**Resultado:**
+```tex
+E = mc^2
+```
+
+---
+
+426) Bloco `asm` (Assembly)
+
+**Código:**
+```md
+```asm
+mov eax, 1
+int 0x80
+```
+```
+
+**Resultado:**
+```asm
+mov eax, 1
+int 0x80
+```
+
+---
+
+427) Bloco `verilog`
+
+**Código:**
+```md
+```verilog
+module top; initial begin $display("ok"); end endmodule
+```
+```
+
+**Resultado:**
+```verilog
+module top; initial begin $display("ok"); end endmodule
+```
+
+---
+
+428) Bloco `vhdl`
+
+**Código:**
+```md
+```vhdl
+entity demo is end;
+```
+```
+
+**Resultado:**
+```vhdl
+entity demo is end;
+```
+
+---
+
+429) Bloco `matlab`
+
+**Código:**
+```md
+```matlab
+disp("ok")
+```
+```
+
+**Resultado:**
+```matlab
+disp("ok")
+```
+
+---
+
+430) Árvore de pastas (texto)
+
+**Código:**
+```md
+```text
+.
+├─ src/
+│  └─ index.ts
+└─ README.md
+```
+```
+
+**Resultado:**
+```text
+.
+├─ src/
+│  └─ index.ts
+└─ README.md
+```
+
+---
+
+## Example 431
+**Código:**
+```python
+# Python code example
+print("Hello, World!")
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 432
+**Código:**
+```c
+// C code example
+#include <stdio.h>
+int main() {
+    printf("Hello, World!");
+    return 0;
+}
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 433
+**Código:**
+```elixir
+# Elixir code example
+IO.puts "Hello, World!"
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 434
+**Código:**
+```bison
+%token START
+%{
+#include <stdio.h>
+%}
+%%
+
+start:
+    printf("Hello, World!");
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 435
+**Código:**
+```php
+// PHP code example
+echo "Hello, World!";
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 436
+**Código:**
+```swift
+// Swift code example
+print("Hello, World!")
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 437
+**Código:**
+```java
+// Java code example
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 438
+**Código:**
+```racket
+# Racket code example
+(display "Hello, World!")
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 439
+**Código:**
+```scala
+// Scala code example
+object HelloWorld {
+    def main(args: Array[String]) {
+        println("Hello, World!")
+    }
+}
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 440
+**Código:**
+```java
+// Java code example
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 441
+**Código:**
+```lisp
+;; Lisp code example
+(print "Hello, World!")
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 442
+**Código:**
+```plaintext
+// Plain text example
+Hello, World!
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 443
+**Código:**
+```bash
+# Bash code example
+echo "Hello, World!"
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 444
+**Código:**
+```json
+// JSON code example
+{"message": "Hello, World!"}
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 445
+**Código:**
+```custom
+# Custom code example
+This is a custom example
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 446
+**Código:**
+```f
+double hello(int n) {
+    return n * 2;
+}
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 447
+**Código:**
+```visualbasic
+' Visual Basic code example
+Console.WriteLine("Hello, World!")
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 448
+**Código:**
+```kotlin
+// Kotlin code example
+fun main() {
+    println("Hello, World!")
+}
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 449
+**Código:**
+```lua
+-- Lua code example
+print("Hello, World!")
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 450
+**Código:**
+```javascript
+// JavaScript code example
+console.log("Hello, World!");
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 451
+**Código:**
+```swift
+// Swift code example
+print("Hello, World!")
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 452
+**Código:**
+```typescript
+// TypeScript code example
+console.log("Hello, World!");
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 453
+**Código:**
+```php
+// PHP code example
+echo "Hello, World!";
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 454
+**Código:**
+```css
+/* CSS code example */
+body {
+    display: block;
+}
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 455
+**Código:**
+```pascal
+// Pascal code example
+WriteLn('Hello, World!');
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 456
+**Código:**
+```r
+# R code example	*
+cat("Hello, World!\n")
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 457
+**Código:**
+```vb
+' VB code example
+Console.WriteLine("Hello, World!")
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 458
+**Código:**
+```fsharp
+// F# code example
+printfn "Hello, World!"
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 459
+**Código:**
+```rust
+// Rust code example
+fn main() {
+    println!("Hello, World!");
+}
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 460
+**Código:**
+```javascript
+// JavaScript code example
+console.log("Hello, World!");
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 461
+**Código:**
+```java
+// Java code example
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 462
+**Código:**
+```prolog
+% Prolog code example
+write('Hello, World!').
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 463
+**Código:**
+```swift
+// Swift code example
+print("Hello, World!")
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 464
+**Código:**
+```swift
+// Swift code example
+print("Hello, World!")
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 465
+**Código:**
+```c
+// C code example
+#include <stdio.h>
+int main() {
+    printf("Hello, World!");
+    return 0;
+}
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 466
+**Código:**
+```javascript
+// JavaScript code example
+console.log("Hello, World!");
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 467
+**Código:**
+```csharp
+// C# code example
+public class Program {
+    public static void Main() {
+        Console.WriteLine("Hello, World!");
+    }
+}
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 468
+**Código:**
+```java
+// Java code example
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 469
+**Código:**
+```haskell
+-- Haskell code example
+main = putStrLn "Hello, World!"
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 470
+**Código:**
+```scala
+// Scala code example
+object HelloWorld {
+    def main(args: Array[String]) {
+        println("Hello, World!")
+    }
+}
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 471
+**Código:**
+```python
+# Python code example
+print("Hello, World!")
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 472
+**Código:**
+```python
+# Python code example
+print("Hello, World!")
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 473
+**Código:**
+```java
+// Java code example
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 474
+**Código:**
+```javascript
+// JavaScript code example
+console.log("Hello, World!");
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 475
+**Código:**
+```c
+// C code example
+#include <stdio.h>
+int main() {
+    printf("Hello, World!");
+    return 0;
+}
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 476
+**Código:**
+```elixir
+# Elixir code example
+IO.puts "Hello, World!"
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 477
+**Código:**
+```elixir
+# Elixir code example
+IO.puts "Hello, World!"
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 478
+**Código:**
+```java
+// Java code example
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 479
+**Código:**
+```html
+<!-- HTML code example -->
+<p>Hello, World!</p>
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
+
+## Example 480
+**Código:**
+```lua
+-- Lua code example
+print("Hello, World!")
+```
+**Resultado:**
+![Result](https://via.placeholder.com/150)
