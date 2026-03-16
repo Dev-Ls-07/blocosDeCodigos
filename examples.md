@@ -4970,685 +4970,780 @@ resource "null_resource" "x" {}
 
 ---
 
-422) YAML estilo “Ansible” (é YAML)
-
-**Código:**
-```md
-```yaml
-- hosts: all
-  tasks:
-    - name: ping
-      ping:
-```
-```
-
-**Resultado:**
-```yaml
-- hosts: all
-  tasks:
-    - name: ping
-      ping:
-```
 
 ---
 
-423) YAML estilo “GitHub Actions”
-
-**Código:**
-```md
-```yaml
-name: Test
-on: [push]
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-```
-```
-
-**Resultado:**
-```yaml
-name: Test
-on: [push]
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-```
-
----
-
-424) Bloco `rst` (reStructuredText)
-
-**Código:**
-```md
-```rst
-Título
-======
-```
-```
-
-**Resultado:**
-```rst
-Título
-======
-```
-
----
-
-425) Bloco `tex` (LaTeX highlight)
-
-**Código:**
-```md
-```tex
-E = mc^2
-```
-```
-
-**Resultado:**
-```tex
-E = mc^2
-```
-
----
-
-426) Bloco `asm` (Assembly)
-
-**Código:**
-```md
-```asm
-mov eax, 1
-int 0x80
-```
-```
-
-**Resultado:**
-```asm
-mov eax, 1
-int 0x80
-```
-
----
-
-427) Bloco `verilog`
-
-**Código:**
-```md
-```verilog
-module top; initial begin $display("ok"); end endmodule
-```
-```
-
-**Resultado:**
-```verilog
-module top; initial begin $display("ok"); end endmodule
-```
-
----
-
-428) Bloco `vhdl`
-
-**Código:**
-```md
-```vhdl
-entity demo is end;
-```
-```
-
-**Resultado:**
-```vhdl
-entity demo is end;
-```
-
----
-
-429) Bloco `matlab`
-
-**Código:**
-```md
-```matlab
-disp("ok")
-```
-```
-
-**Resultado:**
-```matlab
-disp("ok")
-```
-
----
-
-430) Árvore de pastas (texto)
+422) Mostrar “cercas” (fences) no texto
 
 **Código:**
 ```md
 ```text
-.
-├─ src/
-│  └─ index.ts
-└─ README.md
+Use ``` para abrir um bloco.
 ```
 ```
 
 **Resultado:**
 ```text
-.
-├─ src/
-│  └─ index.ts
-└─ README.md
+Use ``` para abrir um bloco.
 ```
 
 ---
 
-## Example 431
+423) Bloco com “tabs” (pode aparecer diferente)
+
 **Código:**
-```python
-# Python code example
-print("Hello, World!")
+```md
+```text
+a\tb\tc
 ```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
+```
 
-## Example 432
+**Resultado:**
+```text
+a\tb\tc
+```
+
+---
+
+424) Mostrar “escape” (barra)
+
 **Código:**
-```c
-// C code example
-#include <stdio.h>
-int main() {
-    printf("Hello, World!");
-    return 0;
-}
+```md
+```text
+C:\Users\me
 ```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
+```
 
-## Example 433
+**Resultado:**
+```text
+C:\Users\me
+```
+
+---
+
+425) Mostrar “template” com chaves
+
 **Código:**
-```elixir
-# Elixir code example
-IO.puts "Hello, World!"
+```md
+```text
+Hello, {{name}}!
 ```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
+```
 
-## Example 434
+**Resultado:**
+```text
+Hello, {{name}}!
+```
+
+---
+
+426) Mostrar “linha muito longa” (exemplo)
+
 **Código:**
-```bison
-%token START
-%{
-#include <stdio.h>
-%}
-%%
-
-start:
-    printf("Hello, World!");
+```md
+```text
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 ```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
+```
 
-## Example 435
+**Resultado:**
+```text
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+```
+
+---
+
+427) Mostrar “markdown” com tabela dentro do bloco
+
 **Código:**
-```php
-// PHP code example
-echo "Hello, World!";
+```md
+```md
+| A | B |
+|---|---|
+| 1 | 2 |
 ```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
+```
 
-## Example 436
+**Resultado:**
+```md
+| A | B |
+|---|---|
+| 1 | 2 |
+```
+
+---
+
+428) Mostrar “fence” com linguagem desconhecida (cai como texto)
+
 **Código:**
-```swift
-// Swift code example
-print("Hello, World!")
+```md
+```unknownlang
+isso vira texto
 ```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
+```
 
-## Example 437
+**Resultado:**
+```unknownlang
+isso vira texto
+```
+
+---
+
+429) Mostrar “código inline” dentro do bloco
+
 **Código:**
-```java
-// Java code example
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
+```md
+```md
+Use `npm i` aqui dentro do bloco.
 ```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
+```
 
-## Example 438
+**Resultado:**
+```md
+Use `npm i` aqui dentro do bloco.
+```
+
+---
+
+430) Observação: blocos são melhores que prints de código em imagem
+
 **Código:**
-```racket
-# Racket code example
-(display "Hello, World!")
+```md
+> Prefira blocos de código ao invés de screenshot.
 ```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
 
-## Example 439
+**Resultado:**
+> Prefira blocos de código ao invés de screenshot.
+
+---
+
+## Seção K — Truques com fences e escaping (431–480)
+
+431) Escapar `*` para não virar itálico
+
 **Código:**
-```scala
-// Scala code example
-object HelloWorld {
-    def main(args: Array[String]) {
-        println("Hello, World!")
-    }
-}
+```md
+\*não é itálico\*
 ```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
 
-## Example 440
+**Resultado:**
+\*não é itálico\*
+
+---
+
+432) Escapar `_` para não virar itálico
+
 **Código:**
-```java
-// Java code example
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
+```md
+\_não é itálico\_
 ```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
 
-## Example 441
+**Resultado:**
+\_não é itálico\_
+
+---
+
+433) Escapar `#` para não virar heading
+
 **Código:**
-```lisp
-;; Lisp code example
-(print "Hello, World!")
+```md
+\# não é título
 ```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
 
-## Example 442
+**Resultado:**
+\# não é título
+
+---
+
+434) Escapar `>` para não virar citação
+
 **Código:**
-```plaintext
-// Plain text example
-Hello, World!
+```md
+\> isso não vira blockquote
 ```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
 
-## Example 443
+**Resultado:**
+\> isso não vira blockquote
+
+---
+
+435) Escapar `-` para não virar lista (em alguns casos)
+
 **Código:**
-```bash
-# Bash code example
-echo "Hello, World!"
+```md
+\- item literal
 ```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
 
-## Example 444
+**Resultado:**
+\- item literal
+
+---
+
+436) Escapar `[` e `]` (texto literal)
+
 **Código:**
-```json
-// JSON code example
-{"message": "Hello, World!"}
+```md
+\[texto\]
 ```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
 
-## Example 445
+**Resultado:**
+\[texto\]
+
+---
+
+437) Escapar `(` e `)` (texto literal)
+
 **Código:**
-```custom
-# Custom code example
-This is a custom example
+```md
+\(assim\)
 ```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
 
-## Example 446
+**Resultado:**
+\(assim\)
+
+---
+
+438) Mostrar “link” sem virar link (code inline)
+
 **Código:**
-```f
-double hello(int n) {
-    return n * 2;
-}
+```md
+`https://example.com`
 ```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
 
-## Example 447
+**Resultado:**
+`https://example.com`
+
+---
+
+439) Mostrar “@user” sem mencionar (code inline)
+
 **Código:**
-```visualbasic
-' Visual Basic code example
-Console.WriteLine("Hello, World!")
+```md
+`@Dev-Ls-07`
 ```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
 
-## Example 448
+**Resultado:**
+`@Dev-Ls-07`
+
+---
+
+440) Mostrar “#123” sem linkar (code inline)
+
 **Código:**
-```kotlin
-// Kotlin code example
-fun main() {
-    println("Hello, World!")
-}
+```md
+`#123`
 ```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
 
-## Example 449
-**Código:**
-```lua
--- Lua code example
-print("Hello, World!")
-```
 **Resultado:**
-![Result](https://via.placeholder.com/150)
+`#123`
 
-## Example 450
-**Código:**
-```javascript
-// JavaScript code example
-console.log("Hello, World!");
-```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
+---
 
-## Example 451
-**Código:**
-```swift
-// Swift code example
-print("Hello, World!")
-```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
+441) “Auto-link” desabilitado com `<span>` (HTML)
 
-## Example 452
-**Código:**
-```typescript
-// TypeScript code example
-console.log("Hello, World!");
-```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
-
-## Example 453
-**Código:**
-```php
-// PHP code example
-echo "Hello, World!";
-```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
-
-## Example 454
-**Código:**
-```css
-/* CSS code example */
-body {
-    display: block;
-}
-```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
-
-## Example 455
-**Código:**
-```pascal
-// Pascal code example
-WriteLn('Hello, World!');
-```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
-
-## Example 456
-**Código:**
-```r
-# R code example	*
-cat("Hello, World!\n")
-```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
-
-## Example 457
-**Código:**
-```vb
-' VB code example
-Console.WriteLine("Hello, World!")
-```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
-
-## Example 458
-**Código:**
-```fsharp
-// F# code example
-printfn "Hello, World!"
-```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
-
-## Example 459
-**Código:**
-```rust
-// Rust code example
-fn main() {
-    println!("Hello, World!");
-}
-```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
-
-## Example 460
-**Código:**
-```javascript
-// JavaScript code example
-console.log("Hello, World!");
-```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
-
-## Example 461
-**Código:**
-```java
-// Java code example
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
-```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
-
-## Example 462
-**Código:**
-```prolog
-% Prolog code example
-write('Hello, World!').
-```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
-
-## Example 463
-**Código:**
-```swift
-// Swift code example
-print("Hello, World!")
-```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
-
-## Example 464
-**Código:**
-```swift
-// Swift code example
-print("Hello, World!")
-```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
-
-## Example 465
-**Código:**
-```c
-// C code example
-#include <stdio.h>
-int main() {
-    printf("Hello, World!");
-    return 0;
-}
-```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
-
-## Example 466
-**Código:**
-```javascript
-// JavaScript code example
-console.log("Hello, World!");
-```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
-
-## Example 467
-**Código:**
-```csharp
-// C# code example
-public class Program {
-    public static void Main() {
-        Console.WriteLine("Hello, World!");
-    }
-}
-```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
-
-## Example 468
-**Código:**
-```java
-// Java code example
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
-```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
-
-## Example 469
-**Código:**
-```haskell
--- Haskell code example
-main = putStrLn "Hello, World!"
-```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
-
-## Example 470
-**Código:**
-```scala
-// Scala code example
-object HelloWorld {
-    def main(args: Array[String]) {
-        println("Hello, World!")
-    }
-}
-```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
-
-## Example 471
-**Código:**
-```python
-# Python code example
-print("Hello, World!")
-```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
-
-## Example 472
-**Código:**
-```python
-# Python code example
-print("Hello, World!")
-```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
-
-## Example 473
-**Código:**
-```java
-// Java code example
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
-```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
-
-## Example 474
-**Código:**
-```javascript
-// JavaScript code example
-console.log("Hello, World!");
-```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
-
-## Example 475
-**Código:**
-```c
-// C code example
-#include <stdio.h>
-int main() {
-    printf("Hello, World!");
-    return 0;
-}
-```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
-
-## Example 476
-**Código:**
-```elixir
-# Elixir code example
-IO.puts "Hello, World!"
-```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
-
-## Example 477
-**Código:**
-```elixir
-# Elixir code example
-IO.puts "Hello, World!"
-```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
-
-## Example 478
-**Código:**
-```java
-// Java code example
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
-```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
-
-## Example 479
 **Código:**
 ```html
-<!-- HTML code example -->
-<p>Hello, World!</p>
+<span>https://example.com</span>
 ```
-**Resultado:**
-![Result](https://via.placeholder.com/150)
 
-## Example 480
-**Código:**
-```lua
--- Lua code example
-print("Hello, World!")
-```
 **Resultado:**
-![Result](https://via.placeholder.com/150)
+<span>https://example.com</span>
+
+---
+
+442) Mostrar pipe `|` fora de tabela (escape)
+
+**Código:**
+```md
+A \| B
+```
+
+**Resultado:**
+A \| B
+
+---
+
+443) Mostrar backslash `\` (duplo)
+
+**Código:**
+```md
+\\
+```
+
+**Resultado:**
+\\
+
+---
+
+444) Mostrar backtick com escape
+
+**Código:**
+```md
+\`
+```
+
+**Resultado:**
+\`
+
+---
+
+445) Código inline com crase dentro (use crases duplas)
+
+**Código:**
+```md
+``use `crase` aqui``
+```
+
+**Resultado:**
+``use `crase` aqui``
+
+---
+
+446) Texto literal com HTML escapado
+
+**Código:**
+```md
+&lt;div&gt;não é uma tag&lt;/div&gt;
+```
+
+**Resultado:**
+&lt;div&gt;não é uma tag&lt;/div&gt;
+
+---
+
+447) Mostrar `<details>` como texto (code)
+
+**Código:**
+```md
+`<details><summary>x</summary>y</details>`
+```
+
+**Resultado:**
+`<details><summary>x</summary>y</details>`
+
+---
+
+448) Mostrar `<img>` como texto (code)
+
+**Código:**
+```md
+`<img src="x.png" />`
+```
+
+**Resultado:**
+`<img src="x.png" />`
+
+---
+
+449) Misturar HTML e Markdown com segurança (exemplo)
+
+**Código:**
+```md
+<b>HTML</b> + **Markdown**
+```
+
+**Resultado:**
+<b>HTML</b> + **Markdown**
+
+---
+
+450) “Falso heading” usando `<p>` + `<b>`
+
+**Código:**
+```html
+<p><b>Título fake</b></p>
+```
+
+**Resultado:**
+<p><b>Título fake</b></p>
+
+---
+
+451) Mostrar “lista” sem virar lista (code block)
+
+**Código:**
+```md
+```text
+- a
+- b
+```
+```
+
+**Resultado:**
+```text
+- a
+- b
+```
+
+---
+
+452) Mostrar “checklist” sem virar checklist (code block)
+
+**Código:**
+```md
+```text
+- [ ] a
+- [x] b
+```
+```
+
+**Resultado:**
+```text
+- [ ] a
+- [x] b
+```
+
+---
+
+453) Mostrar “tabela” sem virar tabela (code block)
+
+**Código:**
+```md
+```text
+| A | B |
+|---|---|
+| 1 | 2 |
+```
+```
+
+**Resultado:**
+```text
+| A | B |
+|---|---|
+| 1 | 2 |
+```
+
+---
+
+454) Mostrar `---` sem virar separador (code inline)
+
+**Código:**
+```md
+`---`
+```
+
+**Resultado:**
+`---`
+
+---
+
+455) Mostrar `---` como texto com escape (varia)
+
+**Código:**
+```md
+\-\-\-
+```
+
+**Resultado:**
+\-\-\-
+
+---
+
+456) Evitar parse de markdown usando HTML `<pre>`
+
+**Código:**
+```html
+<pre>
+- isso não vira lista
+# isso não vira heading
+</pre>
+```
+
+**Resultado:**
+<pre>
+- isso não vira lista
+# isso não vira heading
+</pre>
+
+---
+
+457) `<pre><code>` (mais “correto”)
+
+**Código:**
+```html
+<pre><code>- a
+- b
+</code></pre>
+```
+
+**Resultado:**
+<pre><code>- a
+- b
+</code></pre>
+
+---
+
+458) Mostrar HTML “cru” dentro de `<code>`
+
+**Código:**
+```html
+<code>&lt;div&gt;oi&lt;/div&gt;</code>
+```
+
+**Resultado:**
+<code>&lt;div&gt;oi&lt;/div&gt;</code>
+
+---
+
+459) “Texto monoespaçado” com `<tt>` (obsoleto, mas funciona às vezes)
+
+**Código:**
+```html
+<tt>monoespaçado</tt>
+```
+
+**Resultado:**
+<tt>monoespaçado</tt>
+
+---
+
+460) Forçar quebra de linha com `<br>`
+
+**Código:**
+```md
+Linha 1<br>Linha 2
+```
+
+**Resultado:**
+Linha 1<br>Linha 2
+
+---
+
+461) Espaço não-quebrável (HTML entity)
+
+**Código:**
+```md
+A&nbsp;&nbsp;B
+```
+
+**Resultado:**
+A&nbsp;&nbsp;B
+
+---
+
+462) Mostrar “tab” com `&emsp;`
+
+**Código:**
+```md
+A&emsp;B
+```
+
+**Resultado:**
+A&emsp;B
+
+---
+
+463) Mostrar “seta” literal
+
+**Código:**
+```md
+-&gt; vira seta
+```
+
+**Resultado:**
+-&gt; vira seta
+
+---
+
+464) Mostrar “<=” e “>=” (entities)
+
+**Código:**
+```md
+&lt;= e &gt;=
+```
+
+**Resultado:**
+&lt;= e &gt;=
+
+---
+
+465) “Zero-width space” (útil p/ quebrar link; invisível)
+
+**Código:**
+```md
+https://example.com&#8203;/path
+```
+
+**Resultado:**
+https://example.com&#8203;/path
+
+---
+
+466) “Quebrar” mention de usuário (evita notificação)
+
+**Código:**
+```md
+@Dev-Ls-07&#8203;
+```
+
+**Resultado:**
+@Dev-Ls-07&#8203;
+
+---
+
+467) “Quebrar” issue/pr autolink
+
+**Código:**
+```md
+#12&#8203;3
+```
+
+**Resultado:**
+#12&#8203;3
+
+---
+
+468) “Quebrar” emoji curto (mostra texto)
+
+**Código:**
+```md
+\:smile:
+```
+
+**Resultado:**
+\:smile:
+
+---
+
+469) “Quebrar” markdown de imagem (mostrar sintaxe)
+
+**Código:**
+```md
+\!\[alt\]\(url\)
+```
+
+**Resultado:**
+\!\[alt\]\(url\)
+
+---
+
+470) “Quebrar” markdown de link (mostrar sintaxe)
+
+**Código:**
+```md
+\[\text\]\(url\)
+```
+
+**Resultado:**
+\[\text\]\(url\)
+
+---
+
+471) “Quebrar” blockquote (mostrar sintaxe)
+
+**Código:**
+```md
+\> quote
+```
+
+**Resultado:**
+\> quote
+
+---
+
+472) Linha começando com número sem virar lista (escape)
+
+**Código:**
+```md
+241\) não vira lista numerada automática
+```
+
+**Resultado:**
+241\) não vira lista numerada automática
+
+---
+
+473) Mostrar `:` literal (não tem efeito, mas exemplo)
+
+**Código:**
+```md
+\: literal
+```
+
+**Resultado:**
+\: literal
+
+---
+
+474) Mostrar “<” e “>” literal
+
+**Código:**
+```md
+\<tag\>
+```
+
+**Resultado:**
+\<tag\>
+
+---
+
+475) Mostrar “&” literal (entity)
+
+**Código:**
+```md
+&amp;
+```
+
+**Resultado:**
+&amp;
+
+---
+
+476) Mostrar “copyright” (entity)
+
+**Código:**
+```md
+&copy; 2026
+```
+
+**Resultado:**
+&copy; 2026
+
+---
+
+477) Mostrar “registered” (entity)
+
+**Código:**
+```md
+&reg;
+```
+
+**Resultado:**
+&reg;
+
+---
+
+478) Mostrar “trademark” (entity)
+
+**Código:**
+```md
+&trade;
+```
+
+**Resultado:**
+&trade;
+
+---
+
+479) Mostrar “nbsp” (entity)
+
+**Código:**
+```md
+&nbsp;
+```
+
+**Resultado:**
+&nbsp;
+
+---
+
+480) Mini bloco final (sanidade)
+
+**Código:**
+```md
+> Fim desta parte (422–480).
+```
+
+**Resultado:**
+> Fim desta parte (422–480).
+
