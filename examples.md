@@ -5747,3 +5747,2087 @@ https://example.com&#8203;/path
 **Resultado:**
 > Fim desta parte (422–480).
 
+<!-- Parte 5/12 — Itens 481–600 -->
+
+## Seção L — Imagens (Markdown/HTML), tamanhos, alinhamento e “galerias” (481–540)
+
+481) Imagem básica por URL (gratuita)
+
+**Código:**
+```md
+![Imagem](https://placehold.co/640x320/111827/ffffff.png?text=Imagem)
+```
+
+**Resultado:**
+![Imagem](https://placehold.co/640x320/111827/ffffff.png?text=Imagem)
+
+---
+
+482) Imagem com “alt” descritivo
+
+**Código:**
+```md
+![Banner do projeto](https://placehold.co/800x200/0ea5e9/ffffff.png?text=Banner)
+```
+
+**Resultado:**
+![Banner do projeto](https://placehold.co/800x200/0ea5e9/ffffff.png?text=Banner)
+
+---
+
+483) Imagem pequena (ícone)
+
+**Código:**
+```md
+![OK](https://placehold.co/32x32/22c55e/ffffff.png?text=OK)
+```
+
+**Resultado:**
+![OK](https://placehold.co/32x32/22c55e/ffffff.png?text=OK)
+
+---
+
+484) Imagem clicável (link + imagem)
+
+**Código:**
+```md
+[![Abrir](https://placehold.co/420x200/111827/ffffff.png?text=CLICK)](https://example.com)
+```
+
+**Resultado:**
+[![Abrir](https://placehold.co/420x200/111827/ffffff.png?text=CLICK)](https://example.com)
+
+---
+
+485) Imagem com tamanho (HTML `width`)
+
+**Código:**
+```html
+<img src="https://placehold.co/900x240/111827/ffffff.png?text=Wide" width="420" alt="Wide">
+```
+
+**Resultado:**
+<img src="https://placehold.co/900x240/111827/ffffff.png?text=Wide" width="420" alt="Wide">
+
+---
+
+486) Imagem com altura (HTML `height`)
+
+**Código:**
+```html
+<img src="https://placehold.co/600x600/111827/ffffff.png?text=Square" height="120" alt="Square">
+```
+
+**Resultado:**
+<img src="https://placehold.co/600x600/111827/ffffff.png?text=Square" height="120" alt="Square">
+
+---
+
+487) Imagem com `width` + `height` (pode distorcer)
+
+**Código:**
+```html
+<img src="https://placehold.co/800x400/111827/ffffff.png?text=Resize" width="260" height="80" alt="Resize">
+```
+
+**Resultado:**
+<img src="https://placehold.co/800x400/111827/ffffff.png?text=Resize" width="260" height="80" alt="Resize">
+
+---
+
+488) Imagem alinhada ao centro (HTML)
+
+**Código:**
+```html
+<p align="center">
+  <img src="https://placehold.co/420x180/0ea5e9/ffffff.png?text=Center" width="420" alt="Center">
+</p>
+```
+
+**Resultado:**
+<p align="center">
+  <img src="https://placehold.co/420x180/0ea5e9/ffffff.png?text=Center" width="420" alt="Center">
+</p>
+
+---
+
+489) Imagem alinhada à direita (HTML)
+
+**Código:**
+```html
+<p align="right">
+  <img src="https://placehold.co/280x140/f97316/ffffff.png?text=Right" width="280" alt="Right">
+</p>
+```
+
+**Resultado:**
+<p align="right">
+  <img src="https://placehold.co/280x140/f97316/ffffff.png?text=Right" width="280" alt="Right">
+</p>
+
+---
+
+490) Imagem como “avatar” circular (truque: usar imagem já circular; aqui é só demo)
+
+**Código:**
+```md
+![Avatar](https://placehold.co/120x120/111827/ffffff.png?text=ME)
+```
+
+**Resultado:**
+![Avatar](https://placehold.co/120x120/111827/ffffff.png?text=ME)
+
+---
+
+491) Imagem com legenda (texto abaixo)
+
+**Código:**
+```md
+![Preview](https://placehold.co/720x320/111827/ffffff.png?text=Preview)
+
+*Legenda:* preview da tela inicial.
+```
+
+**Resultado:**
+![Preview](https://placehold.co/720x320/111827/ffffff.png?text=Preview)
+
+*Legenda:* preview da tela inicial.
+
+---
+
+492) Imagem com borda (não dá via Markdown; use tabela/HTML simples)
+
+**Código:**
+```html
+<table>
+  <tr>
+    <td>
+      <img src="https://placehold.co/360x180/111827/ffffff.png?text=Frame" width="360" alt="Frame">
+    </td>
+  </tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr>
+    <td>
+      <img src="https://placehold.co/360x180/111827/ffffff.png?text=Frame" width="360" alt="Frame">
+    </td>
+  </tr>
+</table>
+
+---
+
+493) Duas imagens lado a lado (tabela HTML)
+
+**Código:**
+```html
+<table>
+  <tr>
+    <td><img src="https://placehold.co/320x180/111827/ffffff.png?text=A" width="320" alt="A"></td>
+    <td><img src="https://placehold.co/320x180/111827/ffffff.png?text=B" width="320" alt="B"></td>
+  </tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr>
+    <td><img src="https://placehold.co/320x180/111827/ffffff.png?text=A" width="320" alt="A"></td>
+    <td><img src="https://placehold.co/320x180/111827/ffffff.png?text=B" width="320" alt="B"></td>
+  </tr>
+</table>
+
+---
+
+494) Três imagens (grid simples)
+
+**Código:**
+```html
+<table>
+  <tr>
+    <td><img src="https://placehold.co/220x140/0ea5e9/ffffff.png?text=1" width="220" alt="1"></td>
+    <td><img src="https://placehold.co/220x140/f97316/ffffff.png?text=2" width="220" alt="2"></td>
+    <td><img src="https://placehold.co/220x140/22c55e/ffffff.png?text=3" width="220" alt="3"></td>
+  </tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr>
+    <td><img src="https://placehold.co/220x140/0ea5e9/ffffff.png?text=1" width="220" alt="1"></td>
+    <td><img src="https://placehold.co/220x140/f97316/ffffff.png?text=2" width="220" alt="2"></td>
+    <td><img src="https://placehold.co/220x140/22c55e/ffffff.png?text=3" width="220" alt="3"></td>
+  </tr>
+</table>
+
+---
+
+495) “Before / After” (tabela)
+
+**Código:**
+```html
+<table>
+  <tr>
+    <th>Antes</th>
+    <th>Depois</th>
+  </tr>
+  <tr>
+    <td><img src="https://placehold.co/320x180/111827/ffffff.png?text=Before" width="320" alt="Before"></td>
+    <td><img src="https://placehold.co/320x180/111827/ffffff.png?text=After" width="320" alt="After"></td>
+  </tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr>
+    <th>Antes</th>
+    <th>Depois</th>
+  </tr>
+  <tr>
+    <td><img src="https://placehold.co/320x180/111827/ffffff.png?text=Before" width="320" alt="Before"></td>
+    <td><img src="https://placehold.co/320x180/111827/ffffff.png?text=After" width="320" alt="After"></td>
+  </tr>
+</table>
+
+---
+
+496) Imagem dentro de `<details>` (preview escondido)
+
+**Código:**
+```html
+<details>
+  <summary>Ver screenshot</summary>
+
+  <img src="https://placehold.co/860x380/111827/ffffff.png?text=Screenshot" width="860" alt="Screenshot">
+</details>
+```
+
+**Resultado:**
+<details>
+  <summary>Ver screenshot</summary>
+
+  <img src="https://placehold.co/860x380/111827/ffffff.png?text=Screenshot" width="860" alt="Screenshot">
+</details>
+
+---
+
+497) Imagem como “badge” (tamanho pequeno)
+
+**Código:**
+```md
+![badge](https://placehold.co/120x28/111827/ffffff.png?text=badge)
+```
+
+**Resultado:**
+![badge](https://placehold.co/120x28/111827/ffffff.png?text=badge)
+
+---
+
+498) “Linha” separadora como imagem (não recomendado, mas possível)
+
+**Código:**
+```md
+![line](https://placehold.co/900x8/374151/374151.png)
+```
+
+**Resultado:**
+![line](https://placehold.co/900x8/374151/374151.png)
+
+---
+
+499) Imagem com fundo transparente (nem sempre; demo)
+
+**Código:**
+```md
+![PNG](https://placehold.co/180x80/ffffff/111827.png?text=PNG)
+```
+
+**Resultado:**
+![PNG](https://placehold.co/180x80/ffffff/111827.png?text=PNG)
+
+---
+
+500) Imagem com texto longo (encode)
+
+**Código:**
+```md
+![text](https://placehold.co/720x140/111827/ffffff.png?text=Texto+Longo+no+Banner)
+```
+
+**Resultado:**
+![text](https://placehold.co/720x140/111827/ffffff.png?text=Texto+Longo+no+Banner)
+
+---
+
+501) Logo + texto (layout em tabela)
+
+**Código:**
+```html
+<table>
+  <tr>
+    <td>
+      <img src="https://placehold.co/84x84/111827/ffffff.png?text=LOGO" width="84" alt="logo">
+    </td>
+    <td>
+      <b>Projeto</b><br>
+      Uma frase curta aqui.
+    </td>
+  </tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr>
+    <td>
+      <img src="https://placehold.co/84x84/111827/ffffff.png?text=LOGO" width="84" alt="logo">
+    </td>
+    <td>
+      <b>Projeto</b><br>
+      Uma frase curta aqui.
+    </td>
+  </tr>
+</table>
+
+---
+
+502) “Banner” no topo com alinhamento
+
+**Código:**
+```html
+<p align="center">
+  <img src="https://placehold.co/1000x260/111827/ffffff.png?text=BANNER" width="900" alt="banner">
+</p>
+```
+
+**Resultado:**
+<p align="center">
+  <img src="https://placehold.co/1000x260/111827/ffffff.png?text=BANNER" width="900" alt="banner">
+</p>
+
+---
+
+503) GIF por URL (demo: use um gif real; aqui é placeholder PNG)
+
+**Código:**
+```md
+![GIF](https://placehold.co/640x320/111827/ffffff.png?text=GIF)
+```
+
+**Resultado:**
+![GIF](https://placehold.co/640x320/111827/ffffff.png?text=GIF)
+
+---
+
+504) “Thumbnail” com borda (tabela)
+
+**Código:**
+```html
+<table>
+  <tr><td>
+    <img src="https://placehold.co/420x220/111827/ffffff.png?text=Thumb" width="420" alt="Thumb">
+  </td></tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr><td>
+    <img src="https://placehold.co/420x220/111827/ffffff.png?text=Thumb" width="420" alt="Thumb">
+  </td></tr>
+</table>
+
+---
+
+505) Figura com “caption” simulada (HTML)
+
+**Código:**
+```html
+<figure>
+  <img src="https://placehold.co/720x320/111827/ffffff.png?text=Figure" width="720" alt="Figure">
+  <figcaption>Legenda (figcaption pode não renderizar em todo lugar).</figcaption>
+</figure>
+```
+
+**Resultado:**
+<figure>
+  <img src="https://placehold.co/720x320/111827/ffffff.png?text=Figure" width="720" alt="Figure">
+  <figcaption>Legenda (figcaption pode não renderizar em todo lugar).</figcaption>
+</figure>
+
+---
+
+506) Lista com ícones por imagem
+
+**Código:**
+```md
+- ![ok](https://placehold.co/18x18/22c55e/ffffff.png?text=✓) item ok
+- ![warn](https://placehold.co/18x18/f59e0b/ffffff.png?text=!) item atenção
+- ![no](https://placehold.co/18x18/ef4444/ffffff.png?text=×) item falhou
+```
+
+**Resultado:**
+- ![ok](https://placehold.co/18x18/22c55e/ffffff.png?text=✓) item ok
+- ![warn](https://placehold.co/18x18/f59e0b/ffffff.png?text=!) item atenção
+- ![no](https://placehold.co/18x18/ef4444/ffffff.png?text=×) item falhou
+
+---
+
+507) Imagem inline no meio do texto
+
+**Código:**
+```md
+Status: ![ok](https://placehold.co/18x18/22c55e/ffffff.png?text=✓) pronto.
+```
+
+**Resultado:**
+Status: ![ok](https://placehold.co/18x18/22c55e/ffffff.png?text=✓) pronto.
+
+---
+
+508) “Linha de ícones” (com espaçamento)
+
+**Código:**
+```md
+![a](https://placehold.co/24x24/0ea5e9/ffffff.png?text=A) &nbsp;
+![b](https://placehold.co/24x24/f97316/ffffff.png?text=B) &nbsp;
+![c](https://placehold.co/24x24/22c55e/ffffff.png?text=C)
+```
+
+**Resultado:**
+![a](https://placehold.co/24x24/0ea5e9/ffffff.png?text=A) &nbsp;
+![b](https://placehold.co/24x24/f97316/ffffff.png?text=B) &nbsp;
+![c](https://placehold.co/24x24/22c55e/ffffff.png?text=C)
+
+---
+
+509) Imagem com link (HTML)
+
+**Código:**
+```html
+<a href="https://example.com">
+  <img src="https://placehold.co/360x160/111827/ffffff.png?text=Open" width="360" alt="Open">
+</a>
+```
+
+**Resultado:**
+<a href="https://example.com">
+  <img src="https://placehold.co/360x160/111827/ffffff.png?text=Open" width="360" alt="Open">
+</a>
+
+---
+
+510) Card de “perfil” (tabela + imagem)
+
+**Código:**
+```html
+<table>
+  <tr>
+    <td>
+      <img src="https://placehold.co/96x96/111827/ffffff.png?text=DEV" width="96" alt="Dev">
+    </td>
+    <td>
+      <b>Nome</b><br>
+      @usuario<br>
+      <a href="https://github.com">GitHub</a>
+    </td>
+  </tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr>
+    <td>
+      <img src="https://placehold.co/96x96/111827/ffffff.png?text=DEV" width="96" alt="Dev">
+    </td>
+    <td>
+      <b>Nome</b><br>
+      @usuario<br>
+      <a href="https://github.com">GitHub</a>
+    </td>
+  </tr>
+</table>
+
+---
+
+511) “Galeria” 2x2 (grid)
+
+**Código:**
+```html
+<table>
+  <tr>
+    <td><img src="https://placehold.co/300x180/111827/ffffff.png?text=1" width="300" alt="1"></td>
+    <td><img src="https://placehold.co/300x180/111827/ffffff.png?text=2" width="300" alt="2"></td>
+  </tr>
+  <tr>
+    <td><img src="https://placehold.co/300x180/111827/ffffff.png?text=3" width="300" alt="3"></td>
+    <td><img src="https://placehold.co/300x180/111827/ffffff.png?text=4" width="300" alt="4"></td>
+  </tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr>
+    <td><img src="https://placehold.co/300x180/111827/ffffff.png?text=1" width="300" alt="1"></td>
+    <td><img src="https://placehold.co/300x180/111827/ffffff.png?text=2" width="300" alt="2"></td>
+  </tr>
+  <tr>
+    <td><img src="https://placehold.co/300x180/111827/ffffff.png?text=3" width="300" alt="3"></td>
+    <td><img src="https://placehold.co/300x180/111827/ffffff.png?text=4" width="300" alt="4"></td>
+  </tr>
+</table>
+
+---
+
+512) Imagem com `title` (tooltip; via HTML)
+
+**Código:**
+```html
+<img src="https://placehold.co/420x200/111827/ffffff.png?text=Hover" width="420" alt="Hover" title="Tooltip aqui">
+```
+
+**Resultado:**
+<img src="https://placehold.co/420x200/111827/ffffff.png?text=Hover" width="420" alt="Hover" title="Tooltip aqui">
+
+---
+
+513) Imagem “responsiva” (GitHub controla; use `width` moderado)
+
+**Código:**
+```html
+<img src="https://placehold.co/1200x400/111827/ffffff.png?text=Responsive" width="900" alt="Responsive">
+```
+
+**Resultado:**
+<img src="https://placehold.co/1200x400/111827/ffffff.png?text=Responsive" width="900" alt="Responsive">
+
+---
+
+514) Imagem como separador de seção (banner pequeno)
+
+**Código:**
+```md
+![sep](https://placehold.co/900x80/0ea5e9/ffffff.png?text=Seção+L)
+```
+
+**Resultado:**
+![sep](https://placehold.co/900x80/0ea5e9/ffffff.png?text=Seção+L)
+
+---
+
+515) Imagem com texto “emoji” (URL)
+
+**Código:**
+```md
+![emoji](https://placehold.co/640x180/111827/ffffff.png?text=%E2%9C%85+OK+%E2%9A%A0%EF%B8%8F+WARN+%E2%9D%8C+FAIL)
+```
+
+**Resultado:**
+![emoji](https://placehold.co/640x180/111827/ffffff.png?text=%E2%9C%85+OK+%E2%9A%A0%EF%B8%8F+WARN+%E2%9D%8C+FAIL)
+
+---
+
+516) Imagem com fundo claro
+
+**Código:**
+```md
+![light](https://placehold.co/640x240/f9fafb/111827.png?text=Light+Background)
+```
+
+**Resultado:**
+![light](https://placehold.co/640x240/f9fafb/111827.png?text=Light+Background)
+
+---
+
+517) Imagem com fundo escuro
+
+**Código:**
+```md
+![dark](https://placehold.co/640x240/111827/ffffff.png?text=Dark+Background)
+```
+
+**Resultado:**
+![dark](https://placehold.co/640x240/111827/ffffff.png?text=Dark+Background)
+
+---
+
+518) Imagem como “header” de um card (tabela)
+
+**Código:**
+```html
+<table>
+  <tr><td>
+    <img src="https://placehold.co/720x200/111827/ffffff.png?text=Header" width="720" alt="Header">
+  </td></tr>
+  <tr><td>
+    <b>Título</b><br>
+    Texto do card.
+  </td></tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr><td>
+    <img src="https://placehold.co/720x200/111827/ffffff.png?text=Header" width="720" alt="Header">
+  </td></tr>
+  <tr><td>
+    <b>Título</b><br>
+    Texto do card.
+  </td></tr>
+</table>
+
+---
+
+519) “Barra de progresso” por imagem (fake)
+
+**Código:**
+```md
+![progress](https://placehold.co/600x28/22c55e/ffffff.png?text=70%25)
+```
+
+**Resultado:**
+![progress](https://placehold.co/600x28/22c55e/ffffff.png?text=70%25)
+
+---
+
+520) “Etiqueta” por imagem (fake)
+
+**Código:**
+```md
+![tag](https://placehold.co/180x36/0ea5e9/ffffff.png?text=TAG)
+```
+
+**Resultado:**
+![tag](https://placehold.co/180x36/0ea5e9/ffffff.png?text=TAG)
+
+---
+
+521) Imagem com bordas arredondadas (não controlável sem CSS; demo normal)
+
+**Código:**
+```md
+![rounded?](https://placehold.co/420x220/111827/ffffff.png?text=No+CSS)
+```
+
+**Resultado:**
+![rounded?](https://placehold.co/420x220/111827/ffffff.png?text=No+CSS)
+
+---
+
+522) Mosaico com textos (4 imagens pequenas)
+
+**Código:**
+```html
+<table>
+  <tr>
+    <td><img src="https://placehold.co/180x100/0ea5e9/ffffff.png?text=A" width="180" alt="A"></td>
+    <td><img src="https://placehold.co/180x100/f97316/ffffff.png?text=B" width="180" alt="B"></td>
+  </tr>
+  <tr>
+    <td><img src="https://placehold.co/180x100/22c55e/ffffff.png?text=C" width="180" alt="C"></td>
+    <td><img src="https://placehold.co/180x100/ef4444/ffffff.png?text=D" width="180" alt="D"></td>
+  </tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr>
+    <td><img src="https://placehold.co/180x100/0ea5e9/ffffff.png?text=A" width="180" alt="A"></td>
+    <td><img src="https://placehold.co/180x100/f97316/ffffff.png?text=B" width="180" alt="B"></td>
+  </tr>
+  <tr>
+    <td><img src="https://placehold.co/180x100/22c55e/ffffff.png?text=C" width="180" alt="C"></td>
+    <td><img src="https://placehold.co/180x100/ef4444/ffffff.png?text=D" width="180" alt="D"></td>
+  </tr>
+</table>
+
+---
+
+523) Ícones sociais por imagem (URLs)
+
+**Código:**
+```md
+![gh](https://placehold.co/24x24/111827/ffffff.png?text=GH) GitHub
+![in](https://placehold.co/24x24/0a66c2/ffffff.png?text=in) LinkedIn
+```
+
+**Resultado:**
+![gh](https://placehold.co/24x24/111827/ffffff.png?text=GH) GitHub
+![in](https://placehold.co/24x24/0a66c2/ffffff.png?text=in) LinkedIn
+
+---
+
+524) Imagem em tabela com texto multi-linha
+
+**Código:**
+```html
+<table>
+  <tr>
+    <td><img src="https://placehold.co/120x120/111827/ffffff.png?text=IMG" width="120" alt="IMG"></td>
+    <td>
+      Linha 1<br>
+      Linha 2<br>
+      Linha 3
+    </td>
+  </tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr>
+    <td><img src="https://placehold.co/120x120/111827/ffffff.png?text=IMG" width="120" alt="IMG"></td>
+    <td>
+      Linha 1<br>
+      Linha 2<br>
+      Linha 3
+    </td>
+  </tr>
+</table>
+
+---
+
+525) “Thumb” para vídeo (imagem + link)
+
+**Código:**
+```md
+[![Vídeo](https://placehold.co/720x400/111827/ffffff.png?text=Video+Preview)](https://example.com/video)
+```
+
+**Resultado:**
+[![Vídeo](https://placehold.co/720x400/111827/ffffff.png?text=Video+Preview)](https://example.com/video)
+
+---
+
+526) Imagem com texto “instalar”
+
+**Código:**
+```md
+![install](https://placehold.co/720x120/22c55e/ffffff.png?text=Instala%C3%A7%C3%A3o)
+```
+
+**Resultado:**
+![install](https://placehold.co/720x120/22c55e/ffffff.png?text=Instala%C3%A7%C3%A3o)
+
+---
+
+527) Mostrar “imagem quebrada” (exemplo; não recomendado)
+
+**Código:**
+```md
+![quebrada](https://example.com/nao-existe.png)
+```
+
+**Resultado:**
+![quebrada](https://example.com/nao-existe.png)
+
+---
+
+528) Imagem com fallback (não existe em Markdown; mostre texto alternativo)
+
+**Código:**
+```md
+![se não carregar, veja este texto](https://example.com/nao-existe.png)
+```
+
+**Resultado:**
+![se não carregar, veja este texto](https://example.com/nao-existe.png)
+
+---
+
+529) Imagem no meio de um blockquote
+
+**Código:**
+```md
+> ![img](https://placehold.co/480x200/111827/ffffff.png?text=Inside+Quote)
+```
+
+**Resultado:**
+> ![img](https://placehold.co/480x200/111827/ffffff.png?text=Inside+Quote)
+
+---
+
+530) Imagem com texto “markdown” (ícone)
+
+**Código:**
+```md
+![md](https://placehold.co/48x48/111827/ffffff.png?text=MD)
+```
+
+**Resultado:**
+![md](https://placehold.co/48x48/111827/ffffff.png?text=MD)
+
+---
+
+531) “Mini galeria” com legendas (tabela)
+
+**Código:**
+```html
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://placehold.co/260x140/111827/ffffff.png?text=1" width="260" alt="1"><br>
+      <sub>Screen 1</sub>
+    </td>
+    <td align="center">
+      <img src="https://placehold.co/260x140/111827/ffffff.png?text=2" width="260" alt="2"><br>
+      <sub>Screen 2</sub>
+    </td>
+  </tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://placehold.co/260x140/111827/ffffff.png?text=1" width="260" alt="1"><br>
+      <sub>Screen 1</sub>
+    </td>
+    <td align="center">
+      <img src="https://placehold.co/260x140/111827/ffffff.png?text=2" width="260" alt="2"><br>
+      <sub>Screen 2</sub>
+    </td>
+  </tr>
+</table>
+
+---
+
+532) Ícone por URL dentro de tabela Markdown
+
+**Código:**
+```md
+| Status | Ícone |
+|---|---|
+| ok | ![ok](https://placehold.co/20x20/22c55e/ffffff.png?text=✓) |
+| warn | ![w](https://placehold.co/20x20/f59e0b/ffffff.png?text=!) |
+```
+
+**Resultado:**
+| Status | Ícone |
+|---|---|
+| ok | ![ok](https://placehold.co/20x20/22c55e/ffffff.png?text=✓) |
+| warn | ![w](https://placehold.co/20x20/f59e0b/ffffff.png?text=!) |
+
+---
+
+533) “Banner” por imagem com link de navegação
+
+**Código:**
+```md
+[![Ir](https://placehold.co/900x120/0ea5e9/ffffff.png?text=Voltar+ao+Topo)](#top)
+```
+
+**Resultado:**
+[![Ir](https://placehold.co/900x120/0ea5e9/ffffff.png?text=Voltar+ao+Topo)](#top)
+
+---
+
+534) Imagem com borda “fake” (usar fundo e padding em tabela)
+
+**Código:**
+```html
+<table>
+  <tr>
+    <td style="padding:8px;">
+      <img src="https://placehold.co/380x180/111827/ffffff.png?text=Inner" width="380" alt="Inner">
+    </td>
+  </tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr>
+    <td style="padding:8px;">
+      <img src="https://placehold.co/380x180/111827/ffffff.png?text=Inner" width="380" alt="Inner">
+    </td>
+  </tr>
+</table>
+
+---
+
+535) Imagem com `<picture>` (modo claro/escuro) — (pode variar no GitHub)
+
+**Código:**
+```html
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://placehold.co/720x200/111827/ffffff.png?text=Dark+Mode">
+  <img src="https://placehold.co/720x200/f9fafb/111827.png?text=Light+Mode" width="720" alt="Logo adaptativo">
+</picture>
+```
+
+**Resultado:**
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://placehold.co/720x200/111827/ffffff.png?text=Dark+Mode">
+  <img src="https://placehold.co/720x200/f9fafb/111827.png?text=Light+Mode" width="720" alt="Logo adaptativo">
+</picture>
+
+---
+
+536) Imagem dentro de lista
+
+**Código:**
+```md
+- ![i](https://placehold.co/18x18/0ea5e9/ffffff.png?text=i) item com ícone
+```
+
+**Resultado:**
+- ![i](https://placehold.co/18x18/0ea5e9/ffffff.png?text=i) item com ícone
+
+---
+
+537) Imagem com texto “API”
+
+**Código:**
+```md
+![api](https://placehold.co/640x140/111827/ffffff.png?text=API)
+```
+
+**Resultado:**
+![api](https://placehold.co/640x140/111827/ffffff.png?text=API)
+
+---
+
+538) Imagem com texto “CLI”
+
+**Código:**
+```md
+![cli](https://placehold.co/640x140/111827/ffffff.png?text=CLI)
+```
+
+**Resultado:**
+![cli](https://placehold.co/640x140/111827/ffffff.png?text=CLI)
+
+---
+
+539) Imagem com texto “UI”
+
+**Código:**
+```md
+![ui](https://placehold.co/640x140/111827/ffffff.png?text=UI)
+```
+
+**Resultado:**
+![ui](https://placehold.co/640x140/111827/ffffff.png?text=UI)
+
+---
+
+540) Fim da seção de imagens
+
+**Código:**
+```md
+> Fim da Seção L (481–540).
+```
+
+**Resultado:**
+> Fim da Seção L (481–540).
+
+---
+
+## Seção M — “Badges por imagem” e cards (HTML) (541–600)
+
+541) Card simples com imagem + texto (tabela)
+
+**Código:**
+```html
+<table>
+  <tr>
+    <td width="90">
+      <img src="https://placehold.co/90x90/111827/ffffff.png?text=1" width="90" alt="1">
+    </td>
+    <td>
+      <b>Card</b><br>
+      Texto de exemplo.
+    </td>
+  </tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr>
+    <td width="90">
+      <img src="https://placehold.co/90x90/111827/ffffff.png?text=1" width="90" alt="1">
+    </td>
+    <td>
+      <b>Card</b><br>
+      Texto de exemplo.
+    </td>
+  </tr>
+</table>
+
+---
+
+542) Card com “status” (imagem pequena)
+
+**Código:**
+```html
+<table>
+  <tr>
+    <td><img src="https://placehold.co/22x22/22c55e/ffffff.png?text=✓" width="22" alt="ok"></td>
+    <td><b>Status:</b> pronto</td>
+  </tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr>
+    <td><img src="https://placehold.co/22x22/22c55e/ffffff.png?text=✓" width="22" alt="ok"></td>
+    <td><b>Status:</b> pronto</td>
+  </tr>
+</table>
+
+---
+
+543) Card com link
+
+**Código:**
+```html
+<table>
+  <tr>
+    <td><img src="https://placehold.co/90x90/0ea5e9/ffffff.png?text=DOC" width="90" alt="doc"></td>
+    <td>
+      <b>Documentação</b><br>
+      <a href="https://example.com/docs">Abrir</a>
+    </td>
+  </tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr>
+    <td><img src="https://placehold.co/90x90/0ea5e9/ffffff.png?text=DOC" width="90" alt="doc"></td>
+    <td>
+      <b>Documentação</b><br>
+      <a href="https://example.com/docs">Abrir</a>
+    </td>
+  </tr>
+</table>
+
+---
+
+544) Linha de “badges por imagem” (placehold)
+
+**Código:**
+```md
+![b1](https://placehold.co/120x28/22c55e/ffffff.png?text=OK)
+![b2](https://placehold.co/120x28/f59e0b/ffffff.png?text=WARN)
+![b3](https://placehold.co/120x28/ef4444/ffffff.png?text=FAIL)
+```
+
+**Resultado:**
+![b1](https://placehold.co/120x28/22c55e/ffffff.png?text=OK)
+![b2](https://placehold.co/120x28/f59e0b/ffffff.png?text=WARN)
+![b3](https://placehold.co/120x28/ef4444/ffffff.png?text=FAIL)
+
+---
+
+545) “Badge por imagem” clicável
+
+**Código:**
+```md
+[![Abrir](https://placehold.co/160x28/0ea5e9/ffffff.png?text=OPEN)](https://example.com)
+```
+
+**Resultado:**
+[![Abrir](https://placehold.co/160x28/0ea5e9/ffffff.png?text=OPEN)](https://example.com)
+
+---
+
+546) Card com 2 colunas
+
+**Código:**
+```html
+<table>
+  <tr>
+    <td><b>Título</b><br>Texto A</td>
+    <td><b>Título</b><br>Texto B</td>
+  </tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr>
+    <td><b>Título</b><br>Texto A</td>
+    <td><b>Título</b><br>Texto B</td>
+  </tr>
+</table>
+
+---
+
+547) Card com “botões” (badges do shields)
+
+**Código:**
+```md
+[![Docs](https://img.shields.io/badge/Docs-Open-blue)](https://example.com/docs)
+[![Issues](https://img.shields.io/badge/Issues-Open-yellow)](https://example.com/issues)
+```
+
+**Resultado:**
+[![Docs](https://img.shields.io/badge/Docs-Open-blue)](https://example.com/docs)
+[![Issues](https://img.shields.io/badge/Issues-Open-yellow)](https://example.com/issues)
+
+---
+
+548) Card com `<details>` dentro (expande conteúdo)
+
+**Código:**
+```html
+<table>
+  <tr>
+    <td>
+      <details>
+        <summary><b>Mais informações</b></summary>
+        Texto escondido.
+      </details>
+    </td>
+  </tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr>
+    <td>
+      <details>
+        <summary><b>Mais informações</b></summary>
+        Texto escondido.
+      </details>
+    </td>
+  </tr>
+</table>
+
+---
+
+549) Card com lista dentro
+
+**Código:**
+```html
+<table>
+  <tr>
+    <td>
+      <b>Tarefas</b>
+      <ul>
+        <li>uma</li>
+        <li>duas</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr>
+    <td>
+      <b>Tarefas</b>
+      <ul>
+        <li>uma</li>
+        <li>duas</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+550) “Mini card” com kbd
+
+**Código:**
+```html
+<table>
+  <tr>
+    <td>
+      Use <kbd>Ctrl</kbd> + <kbd>K</kbd>.
+    </td>
+  </tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr>
+    <td>
+      Use <kbd>Ctrl</kbd> + <kbd>K</kbd>.
+    </td>
+  </tr>
+</table>
+
+---
+
+551) Card com `<code>` e `<pre>`
+
+**Código:**
+```html
+<table>
+  <tr>
+    <td>
+      <b>Saída</b><br>
+      <pre><code>OK
+DONE</code></pre>
+    </td>
+  </tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr>
+    <td>
+      <b>Saída</b><br>
+      <pre><code>OK
+DONE</code></pre>
+    </td>
+  </tr>
+</table>
+
+---
+
+552) Card com imagem + badges do shields
+
+**Código:**
+```html
+<table>
+  <tr>
+    <td><img src="https://placehold.co/72x72/111827/ffffff.png?text=APP" width="72" alt="app"></td>
+    <td>
+      <b>MeuApp</b><br>
+      <img src="https://img.shields.io/badge/build-passing-brightgreen" alt="build">
+      <img src="https://img.shields.io/badge/status-beta-yellow" alt="status">
+    </td>
+  </tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr>
+    <td><img src="https://placehold.co/72x72/111827/ffffff.png?text=APP" width="72" alt="app"></td>
+    <td>
+      <b>MeuApp</b><br>
+      <img src="https://img.shields.io/badge/build-passing-brightgreen" alt="build">
+      <img src="https://img.shields.io/badge/status-beta-yellow" alt="status">
+    </td>
+  </tr>
+</table>
+
+---
+
+553) Lista de “cards” em tabela (2 linhas)
+
+**Código:**
+```html
+<table>
+  <tr>
+    <td><b>Core</b><br><sub>base</sub></td>
+    <td><b>CLI</b><br><sub>terminal</sub></td>
+  </tr>
+  <tr>
+    <td><b>API</b><br><sub>http</sub></td>
+    <td><b>UI</b><br><sub>front</sub></td>
+  </tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr>
+    <td><b>Core</b><br><sub>base</sub></td>
+    <td><b>CLI</b><br><sub>terminal</sub></td>
+  </tr>
+  <tr>
+    <td><b>API</b><br><sub>http</sub></td>
+    <td><b>UI</b><br><sub>front</sub></td>
+  </tr>
+</table>
+
+---
+
+554) Card “changelog” com data (exemplo)
+
+**Código:**
+```html
+<table>
+  <tr>
+    <td><b>Changelog</b></td>
+  </tr>
+  <tr>
+    <td>2026-03-16: docs</td>
+  </tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr>
+    <td><b>Changelog</b></td>
+  </tr>
+  <tr>
+    <td>2026-03-16: docs</td>
+  </tr>
+</table>
+
+---
+
+555) Card com “CTA” (botão/badge)
+
+**Código:**
+```md
+[![Começar](https://img.shields.io/badge/Começar-Agora-success)](https://example.com/start)
+```
+
+**Resultado:**
+[![Começar](https://img.shields.io/badge/Começar-Agora-success)](https://example.com/start)
+
+---
+
+556) Card com “download” (botão/badge)
+
+**Código:**
+```md
+[![Download](https://img.shields.io/badge/Download-ZIP-blue)](https://example.com/file.zip)
+```
+
+**Resultado:**
+[![Download](https://img.shields.io/badge/Download-ZIP-blue)](https://example.com/file.zip)
+
+---
+
+557) Card com “suporte” (botão/badge)
+
+**Código:**
+```md
+[![Suporte](https://img.shields.io/badge/Suporte-Contato-orange)](mailto:dev@example.com)
+```
+
+**Resultado:**
+[![Suporte](https://img.shields.io/badge/Suporte-Contato-orange)](mailto:dev@example.com)
+
+---
+
+558) “Pílulas” como imagens (placehold)
+
+**Código:**
+```md
+![p1](https://placehold.co/140x34/0ea5e9/ffffff.png?text=DOCS)
+![p2](https://placehold.co/140x34/22c55e/ffffff.png?text=BUILD)
+![p3](https://placehold.co/140x34/f97316/ffffff.png?text=DEMO)
+```
+
+**Resultado:**
+![p1](https://placehold.co/140x34/0ea5e9/ffffff.png?text=DOCS)
+![p2](https://placehold.co/140x34/22c55e/ffffff.png?text=BUILD)
+![p3](https://placehold.co/140x34/f97316/ffffff.png?text=DEMO)
+
+---
+
+559) Linha “features” com ícones (imagens)
+
+**Código:**
+```md
+- ![f](https://placehold.co/18x18/22c55e/ffffff.png?text=✓) rápido
+- ![f](https://placehold.co/18x18/22c55e/ffffff.png?text=✓) simples
+- ![f](https://placehold.co/18x18/22c55e/ffffff.png?text=✓) leve
+```
+
+**Resultado:**
+- ![f](https://placehold.co/18x18/22c55e/ffffff.png?text=✓) rápido
+- ![f](https://placehold.co/18x18/22c55e/ffffff.png?text=✓) simples
+- ![f](https://placehold.co/18x18/22c55e/ffffff.png?text=✓) leve
+
+---
+
+560) “Tabela de cards” com imagens (2 colunas)
+
+**Código:**
+```html
+<table>
+  <tr>
+    <td>
+      <img src="https://placehold.co/320x140/111827/ffffff.png?text=Card+1" width="320" alt="Card 1"><br>
+      <b>Card 1</b>
+    </td>
+    <td>
+      <img src="https://placehold.co/320x140/111827/ffffff.png?text=Card+2" width="320" alt="Card 2"><br>
+      <b>Card 2</b>
+    </td>
+  </tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr>
+    <td>
+      <img src="https://placehold.co/320x140/111827/ffffff.png?text=Card+1" width="320" alt="Card 1"><br>
+      <b>Card 1</b>
+    </td>
+    <td>
+      <img src="https://placehold.co/320x140/111827/ffffff.png?text=Card+2" width="320" alt="Card 2"><br>
+      <b>Card 2</b>
+    </td>
+  </tr>
+</table>
+
+---
+
+561) Card com “tags” (pílulas)
+
+**Código:**
+```md
+![tag](https://placehold.co/120x28/111827/ffffff.png?text=TAG) ![tag](https://placehold.co/120x28/111827/ffffff.png?text=TAG2)
+```
+
+**Resultado:**
+![tag](https://placehold.co/120x28/111827/ffffff.png?text=TAG) ![tag](https://placehold.co/120x28/111827/ffffff.png?text=TAG2)
+
+---
+
+562) Card com imagem “logo” e link “site”
+
+**Código:**
+```html
+<table>
+  <tr>
+    <td><img src="https://placehold.co/72x72/0ea5e9/ffffff.png?text=WEB" width="72" alt="web"></td>
+    <td>
+      <b>Website</b><br>
+      <a href="https://example.com">Abrir</a>
+    </td>
+  </tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr>
+    <td><img src="https://placehold.co/72x72/0ea5e9/ffffff.png?text=WEB" width="72" alt="web"></td>
+    <td>
+      <b>Website</b><br>
+      <a href="https://example.com">Abrir</a>
+    </td>
+  </tr>
+</table>
+
+---
+
+563) “Badge” com texto grande (imagem)
+
+**Código:**
+```md
+![big](https://placehold.co/520x60/111827/ffffff.png?text=BIG+BADGE)
+```
+
+**Resultado:**
+![big](https://placehold.co/520x60/111827/ffffff.png?text=BIG+BADGE)
+
+---
+
+564) Card “FAQ” com `<details>`
+
+**Código:**
+```html
+<details>
+  <summary><b>FAQ</b></summary>
+
+  <table>
+    <tr><td><b>Pergunta:</b> funciona?</td></tr>
+    <tr><td><b>Resposta:</b> sim.</td></tr>
+  </table>
+</details>
+```
+
+**Resultado:**
+<details>
+  <summary><b>FAQ</b></summary>
+
+  <table>
+    <tr><td><b>Pergunta:</b> funciona?</td></tr>
+    <tr><td><b>Resposta:</b> sim.</td></tr>
+  </table>
+</details>
+
+---
+
+565) Card com “chamada” (callout) + imagem
+
+**Código:**
+```md
+> ![info](https://placehold.co/24x24/0ea5e9/ffffff.png?text=i) **Info:** veja a seção de instalação.
+```
+
+**Resultado:**
+> ![info](https://placehold.co/24x24/0ea5e9/ffffff.png?text=i) **Info:** veja a seção de instalação.
+
+---
+
+566) Card com “warning” + imagem
+
+**Código:**
+```md
+> ![w](https://placehold.co/24x24/f59e0b/ffffff.png?text=!) **Atenção:** use com cuidado.
+```
+
+**Resultado:**
+> ![w](https://placehold.co/24x24/f59e0b/ffffff.png?text=!) **Atenção:** use com cuidado.
+
+---
+
+567) Card com “danger” + imagem
+
+**Código:**
+```md
+> ![x](https://placehold.co/24x24/ef4444/ffffff.png?text=×) **Perigo:** não use em produção.
+```
+
+**Resultado:**
+> ![x](https://placehold.co/24x24/ef4444/ffffff.png?text=×) **Perigo:** não use em produção.
+
+---
+
+568) Card com link “voltar ao topo”
+
+**Código:**
+```md
+[![Topo](https://placehold.co/160x28/0ea5e9/ffffff.png?text=TOP)](#top)
+```
+
+**Resultado:**
+[![Topo](https://placehold.co/160x28/0ea5e9/ffffff.png?text=TOP)](#top)
+
+---
+
+569) “Linha” de botões (badges)
+
+**Código:**
+```md
+[![Docs](https://img.shields.io/badge/Docs-Open-blue)](https://example.com/docs)
+[![Demo](https://img.shields.io/badge/Demo-Play-green)](https://example.com/demo)
+[![Contato](https://img.shields.io/badge/Contato-Email-orange)](mailto:dev@example.com)
+```
+
+**Resultado:**
+[![Docs](https://img.shields.io/badge/Docs-Open-blue)](https://example.com/docs)
+[![Demo](https://img.shields.io/badge/Demo-Play-green)](https://example.com/demo)
+[![Contato](https://img.shields.io/badge/Contato-Email-orange)](mailto:dev@example.com)
+
+---
+
+570) “Mini header” com imagem + badges
+
+**Código:**
+```md
+![mini](https://placehold.co/900x120/111827/ffffff.png?text=Mini+Header)
+
+![status](https://img.shields.io/badge/status-beta-yellow)
+![build](https://img.shields.io/badge/build-passing-brightgreen)
+```
+
+**Resultado:**
+![mini](https://placehold.co/900x120/111827/ffffff.png?text=Mini+Header)
+
+![status](https://img.shields.io/badge/status-beta-yellow)
+![build](https://img.shields.io/badge/build-passing-brightgreen)
+
+---
+
+571) Card com “contadores” (fake)
+
+**Código:**
+```md
+![stars](https://placehold.co/160x28/fbbf24/111827.png?text=Stars+42)
+![forks](https://placehold.co/160x28/60a5fa/111827.png?text=Forks+10)
+```
+
+**Resultado:**
+![stars](https://placehold.co/160x28/fbbf24/111827.png?text=Stars+42)
+![forks](https://placehold.co/160x28/60a5fa/111827.png?text=Forks+10)
+
+---
+
+572) Card “compatibilidade” com ícones (imagens)
+
+**Código:**
+```md
+| OS | Suporte |
+|---|---|
+| Linux | ![ok](https://placehold.co/18x18/22c55e/ffffff.png?text=✓) |
+| Windows | ![w](https://placehold.co/18x18/f59e0b/ffffff.png?text=!) |
+```
+
+**Resultado:**
+| OS | Suporte |
+|---|---|
+| Linux | ![ok](https://placehold.co/18x18/22c55e/ffffff.png?text=✓) |
+| Windows | ![w](https://placehold.co/18x18/f59e0b/ffffff.png?text=!) |
+
+---
+
+573) “Linha” com ícones + texto + link
+
+**Código:**
+```md
+![doc](https://placehold.co/18x18/0ea5e9/ffffff.png?text=D) [Docs](https://example.com/docs) •
+![api](https://placehold.co/18x18/22c55e/ffffff.png?text=A) [API](https://example.com/api)
+```
+
+**Resultado:**
+![doc](https://placehold.co/18x18/0ea5e9/ffffff.png?text=D) [Docs](https://example.com/docs) •
+![api](https://placehold.co/18x18/22c55e/ffffff.png?text=A) [API](https://example.com/api)
+
+---
+
+574) Card com “texto pequeno” (`<small>`)
+
+**Código:**
+```html
+<table>
+  <tr><td><b>Nota</b><br><small>texto pequeno</small></td></tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr><td><b>Nota</b><br><small>texto pequeno</small></td></tr>
+</table>
+
+---
+
+575) Card com “destaque” (`<mark>`)
+
+**Código:**
+```html
+<table>
+  <tr><td><mark>destaque</mark> em card</td></tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr><td><mark>destaque</mark> em card</td></tr>
+</table>
+
+---
+
+576) Card com `<del>` (removido)
+
+**Código:**
+```html
+<table>
+  <tr><td><del>removido</del> e novo</td></tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr><td><del>removido</del> e novo</td></tr>
+</table>
+
+---
+
+577) Card com `<ins>` (novo)
+
+**Código:**
+```html
+<table>
+  <tr><td><ins>novo</ins> em destaque</td></tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr><td><ins>novo</ins> em destaque</td></tr>
+</table>
+
+---
+
+578) Card com `<abbr>`
+
+**Código:**
+```html
+<table>
+  <tr><td><abbr title="Application Programming Interface">API</abbr> no card</td></tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr><td><abbr title="Application Programming Interface">API</abbr> no card</td></tr>
+</table>
+
+---
+
+579) Card com imagem “QA” (demo)
+
+**Código:**
+```md
+![qa](https://placehold.co/240x80/111827/ffffff.png?text=QA)
+```
+
+**Resultado:**
+![qa](https://placehold.co/240x80/111827/ffffff.png?text=QA)
+
+---
+
+580) Card com imagem “DEV” (demo)
+
+**Código:**
+```md
+![dev](https://placehold.co/240x80/111827/ffffff.png?text=DEV)
+```
+
+**Resultado:**
+![dev](https://placehold.co/240x80/111827/ffffff.png?text=DEV)
+
+---
+
+581) Card com imagem “PROD” (demo)
+
+**Código:**
+```md
+![prod](https://placehold.co/240x80/111827/ffffff.png?text=PROD)
+```
+
+**Resultado:**
+![prod](https://placehold.co/240x80/111827/ffffff.png?text=PROD)
+
+---
+
+582) Card com “pipeline” (fake)
+
+**Código:**
+```md
+![pipe](https://placehold.co/720x120/111827/ffffff.png?text=Build+%E2%86%92+Test+%E2%86%92+Deploy)
+```
+
+**Resultado:**
+![pipe](https://placehold.co/720x120/111827/ffffff.png?text=Build+%E2%86%92+Test+%E2%86%92+Deploy)
+
+---
+
+583) Card com “mapa” (demo)
+
+**Código:**
+```md
+![map](https://placehold.co/720x220/0ea5e9/ffffff.png?text=Roadmap)
+```
+
+**Resultado:**
+![map](https://placehold.co/720x220/0ea5e9/ffffff.png?text=Roadmap)
+
+---
+
+584) Card com “timeline” (demo)
+
+**Código:**
+```md
+![time](https://placehold.co/720x220/f97316/ffffff.png?text=Timeline)
+```
+
+**Resultado:**
+![time](https://placehold.co/720x220/f97316/ffffff.png?text=Timeline)
+
+---
+
+585) Card com “status bar” (demo)
+
+**Código:**
+```md
+![bar](https://placehold.co/720x36/22c55e/ffffff.png?text=STATUS)
+```
+
+**Resultado:**
+![bar](https://placehold.co/720x36/22c55e/ffffff.png?text=STATUS)
+
+---
+
+586) Card com “links” (tabela)
+
+**Código:**
+```html
+<table>
+  <tr>
+    <td>
+      <b>Links</b><br>
+      <a href="https://example.com">Site</a><br>
+      <a href="https://example.com/docs">Docs</a>
+    </td>
+  </tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr>
+    <td>
+      <b>Links</b><br>
+      <a href="https://example.com">Site</a><br>
+      <a href="https://example.com/docs">Docs</a>
+    </td>
+  </tr>
+</table>
+
+---
+
+587) Card com “checklist” (HTML)
+
+**Código:**
+```html
+<table>
+  <tr>
+    <td>
+      <b>Checklist</b>
+      <ul>
+        <li>setup</li>
+        <li>build</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr>
+    <td>
+      <b>Checklist</b>
+      <ul>
+        <li>setup</li>
+        <li>build</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+588) Card com “atalho” (kbd)
+
+**Código:**
+```md
+Atalho: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>
+```
+
+**Resultado:**
+Atalho: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>
+
+---
+
+589) Card com “comando” (inline)
+
+**Código:**
+```md
+Instale com `npm i`.
+```
+
+**Resultado:**
+Instale com `npm i`.
+
+---
+
+590) Card com bloco de código (em `<details>`)
+
+**Código:**
+```html
+<details>
+  <summary><b>Instalação</b></summary>
+
+  ```bash
+  npm i
+  npm run build
+  ```
+</details>
+```
+
+**Resultado:**
+<details>
+  <summary><b>Instalação</b></summary>
+
+  ```bash
+  npm i
+  npm run build
+  ```
+</details>
+
+---
+
+591) Card com “resultado” (output)
+
+**Código:**
+```md
+> Saída:
+> ```text
+> OK
+> ```
+```
+
+**Resultado:**
+> Saída:
+> ```text
+> OK
+> ```
+
+---
+
+592) Card com “imagem + texto + link” (3 colunas)
+
+**Código:**
+```html
+<table>
+  <tr>
+    <td><img src="https://placehold.co/60x60/22c55e/ffffff.png?text=✓" width="60" alt="ok"></td>
+    <td><b>Pronto</b><br>build passou</td>
+    <td><a href="https://example.com">ver</a></td>
+  </tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr>
+    <td><img src="https://placehold.co/60x60/22c55e/ffffff.png?text=✓" width="60" alt="ok"></td>
+    <td><b>Pronto</b><br>build passou</td>
+    <td><a href="https://example.com">ver</a></td>
+  </tr>
+</table>
+
+---
+
+593) Card “colspan” (HTML)
+
+**Código:**
+```html
+<table>
+  <tr><th colspan="2">Título</th></tr>
+  <tr><td>A</td><td>B</td></tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr><th colspan="2">Título</th></tr>
+  <tr><td>A</td><td>B</td></tr>
+</table>
+
+---
+
+594) Card “rowspan” (HTML)
+
+**Código:**
+```html
+<table>
+  <tr><td rowspan="2">Grupo</td><td>Item 1</td></tr>
+  <tr><td>Item 2</td></tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr><td rowspan="2">Grupo</td><td>Item 1</td></tr>
+  <tr><td>Item 2</td></tr>
+</table>
+
+---
+
+595) Card com alinhamento por célula (HTML)
+
+**Código:**
+```html
+<table>
+  <tr>
+    <td align="left">Esq</td>
+    <td align="center">Centro</td>
+    <td align="right">Dir</td>
+  </tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr>
+    <td align="left">Esq</td>
+    <td align="center">Centro</td>
+    <td align="right">Dir</td>
+  </tr>
+</table>
+
+---
+
+596) Card com “hr” interno
+
+**Código:**
+```html
+<table>
+  <tr><td>Parte 1<hr>Parte 2</td></tr>
+</table>
+```
+
+**Resultado:**
+<table>
+  <tr><td>Parte 1<hr>Parte 2</td></tr>
+</table>
+
+---
+
+597) Card com “bloco” via `<blockquote>` (HTML)
+
+**Código:**
+```html
+<blockquote>
+  <b>Nota:</b> isso é um exemplo.
+</blockquote>
+```
+
+**Resultado:**
+<blockquote>
+  <b>Nota:</b> isso é um exemplo.
+</blockquote>
+
+---
+
+598) Card “seção” com banner pequeno (imagem)
+
+**Código:**
+```md
+![sec](https://placehold.co/900x80/f97316/ffffff.png?text=Se%C3%A7%C3%A3o+M)
+```
+
+**Resultado:**
+![sec](https://placehold.co/900x80/f97316/ffffff.png?text=Se%C3%A7%C3%A3o+M)
+
+---
+
+599) Nota: GitHub pode ignorar alguns estilos inline
+
+**Código:**
+```md
+<!-- Estilos inline (style="...") podem ser removidos/sanitizados no GitHub. -->
+```
+
+**Resultado:**
+<!-- Estilos inline (style="...") podem ser removidos/sanitizados no GitHub. -->
+
+---
+
+600) Fim desta parte
+
+**Código:**
+```md
+> Fim da Parte 5/12 (481–600).
+```
+
+**Resultado:**
+> Fim da Parte 5/12 (481–600).
+
